@@ -1,4 +1,4 @@
-import supplierCatalog from './import/supplier-catalog.json';
+import supplierCatalog from './import/supplier-catalog.json' with { type: 'json' };
 import type { Product, ProductCategory } from './catalog-schema.ts';
 
 /** Canonical dataset. The checked-in snapshot is supplier-sourced; future refreshes use the live importer. */
