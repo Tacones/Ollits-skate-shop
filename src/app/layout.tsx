@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { CartProvider } from '@/components/cart-provider';
 
 export const metadata: Metadata = {
   title: 'Ollits Skate Shop | Skate, Street & Culture',
@@ -11,11 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body><CartProvider><Header /><main>{children}</main><Footer /></CartProvider></body>
     </html>
   );
 }
