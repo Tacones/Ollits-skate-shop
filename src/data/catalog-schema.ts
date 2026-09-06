@@ -35,7 +35,7 @@ export type Product = {
   images: ProductImage[];
   available: boolean;
   stock?: number;
-  sourceUrl: string;
+  sourceUrl?: string;
   source: 'Osso Skate Shop';
 };
 
