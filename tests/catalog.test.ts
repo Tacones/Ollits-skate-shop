@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { categories, products } from '../src/data/products';
-import { getProductPrice } from '../src/data/catalog';
+import { categories, products } from '../src/data/products.ts';
+import { getProductPrice } from '../src/data/catalog.ts';
 
 test('catalog exposes the scalable storefront taxonomy', () => {
   assert.deepEqual(categories, ['Shapes', 'Trucks', 'Rodas', 'Rolamentos', 'Acessórios', 'Vestuário', 'Skate Completo', 'Longboard']);
