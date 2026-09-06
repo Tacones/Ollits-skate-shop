@@ -3,7 +3,7 @@ export type {
   ProductCategory,
   ProductImage,
   ProductVariant,
-} from './catalog-schema';
+} from './catalog-schema.ts';
 
-export { categories } from './catalog-schema';
-export { products, featuredProducts } from './catalog';
+export { categories } from './catalog-schema.ts';
+export { products, featuredProducts } from './catalog.ts';
