@@ -21,6 +21,7 @@ function decodeHtml(value) {
 }
 
 function stripHtml(value) { return decodeHtml(value.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()); }
+function normalizeText(value) { return stripHtml(String(value || '')).toLowerCase().replace(/\s+/g, ' ').trim(); }
 
 function parseMoney(value) {
   if (typeof value === 'number') return value;
@@ -42,8 +43,12 @@ function extractJsonLd(html) {
   return records;
 }
 
-function firstProductJsonLd(records) {
-  return records.find((record) => record?.['@type'] === 'Product' || (Array.isArray(record?.['@type']) && record['@type'].includes('Product')));
+function productJsonLd(records, pageName, pageUrl) {
+  const products = records.filter((record) => record?.['@type'] === 'Product' || (Array.isArray(record?.['@type']) && record['@type'].includes('Product')));
+  const normalizedName = normalizeText(pageName);
+  return products.find((record) => normalizeText(record?.name) === normalizedName)
+    || products.find((record) => normalizeText(record?.url) === normalizeText(pageUrl))
+    || products[0];
 }
 
 function extractProductLinks(html) {
@@ -59,13 +64,18 @@ function extractImageUrls(html, jsonLd) {
   const urls = [];
   const push = (value) => {
     const url = absoluteUrl(value);
-    if (url && /\.(?:jpe?g|png|webp|avif)(?:\?|$)/i.test(url) && !urls.includes(url)) urls.push(url);
+    if (!url || !/\.(?:jpe?g|png|webp|avif)(?:\?|$)/i.test(url)) return;
+    const isProductImage = /\/stores\/[^/]+\/products\//i.test(new URL(url).pathname);
+    if (!isProductImage || urls.includes(url)) return;
+    urls.push(url);
   };
   const jsonImages = jsonLd?.image;
   if (Array.isArray(jsonImages)) jsonImages.forEach(push);
   else if (typeof jsonImages === 'string') push(jsonImages);
-  push(html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]);
-  for (const match of html.matchAll(/(?:src|data-src|data-large|data-image)=["']([^"']+)["']/gi)) push(match[1]);
+  if (!urls.length) push(html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]);
+  if (!urls.length) {
+    for (const match of html.matchAll(/(?:src|data-src|data-large|data-image)=["']([^"']+)["']/gi)) push(match[1]);
+  }
   return urls;
 }
 
@@ -74,10 +84,24 @@ function extractDiscount(html) {
   return match ? Number(match[1]) : undefined;
 }
 
-function extractRawPricePair(html) {
+function extractStructuredPrice(html) {
+  const match = html.match(/itemprop=["']price["'][^>]*content=["']([^"']+)["']/i)
+    || html.match(/content=["']([^"']+)["'][^>]*itemprop=["']price["']/i);
+  return match ? parseMoney(match[1]) : undefined;
+}
+
+function extractVisiblePricePair(html, currentPrice) {
   const money = [...html.matchAll(/R\$\s*[\d.]+,\d{2}/g)].map((match) => match[0].replace(/\s+/g, ' '));
   const unique = [...new Set(money)];
-  return unique.length ? { priceRaw: unique[0], promotionalPriceRaw: unique[1] } : {};
+  const current = unique.find((value) => Math.abs((parseMoney(value) ?? -1) - (currentPrice ?? -2)) < 0.001);
+  if (!current) return {};
+  const currentIndex = unique.indexOf(current);
+  const before = unique.slice(Math.max(0, currentIndex - 4), currentIndex).map(parseMoney).filter(Number.isFinite);
+  const original = before.find((value) => value > (currentPrice ?? 0));
+  return {
+    priceRaw: original === undefined ? current : `R$${original.toFixed(2).replace('.', ',')}`,
+    promotionalPriceRaw: original === undefined ? undefined : current,
+  };
 }
 
 function extractAvailability(jsonLd, html) {
@@ -148,29 +172,32 @@ async function crawlListing(path) {
 
 async function parseProduct(url) {
   const html = await fetchHtml(url);
-  const jsonLd = firstProductJsonLd(extractJsonLd(html));
-  const name = jsonLd?.name || stripHtml(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '');
+  const h1Name = stripHtml(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '');
+  const jsonLd = productJsonLd(extractJsonLd(html), h1Name, url);
+  const name = h1Name || stripHtml(jsonLd?.name || '');
   if (!name) return null;
   const offer = Array.isArray(jsonLd?.offers) ? jsonLd.offers[0] : jsonLd?.offers;
-  const rawPair = extractRawPricePair(html);
-  const price = parseMoney(offer?.price) ?? parseMoney(rawPair.priceRaw) ?? 0;
-  const promotionalPrice = parseMoney(rawPair.promotionalPriceRaw);
+  const currentPrice = extractStructuredPrice(html) ?? parseMoney(offer?.price);
+  const visiblePair = extractVisiblePricePair(html, currentPrice);
+  const price = currentPrice ?? parseMoney(visiblePair.promotionalPriceRaw) ?? parseMoney(visiblePair.priceRaw) ?? 0;
+  const promotionalPrice = visiblePair.promotionalPriceRaw ? parseMoney(visiblePair.promotionalPriceRaw) : undefined;
   const discountPercent = extractDiscount(html);
   const description = jsonLd?.description ? stripHtml(String(jsonLd.description)) : undefined;
   const images = extractImageUrls(html, jsonLd).map((src, index) => ({ src, alt: name, position: index + 1 }));
   const sku = jsonLd?.sku || jsonLd?.mpn || undefined;
   const parsedUrl = new URL(url);
+  const canonicalUrl = absoluteUrl(jsonLd?.url) || url;
   return {
-    id: sku || parsedUrl.pathname.replace(/^\/produtos\//, '').replace(/\/$/, ''),
+    id: sku || new URL(canonicalUrl).pathname.replace(/^\/produtos\//, '').replace(/\/$/, ''),
     sku,
     name,
     brand: extractBrand(jsonLd, html),
     category: extractCategory(parsedUrl.pathname, name),
     department: parsedUrl.pathname.split('/')[1] || undefined,
     price,
-    priceRaw: rawPair.priceRaw,
+    priceRaw: visiblePair.priceRaw,
     promotionalPrice,
-    promotionalPriceRaw: rawPair.promotionalPriceRaw,
+    promotionalPriceRaw: visiblePair.promotionalPriceRaw,
     discountPercent,
     discountPercentRaw: discountPercent === undefined ? undefined : `${discountPercent}% OFF`,
     variants: extractVariants(html),
@@ -178,7 +205,7 @@ async function parseProduct(url) {
     specifications: {},
     images,
     available: extractAvailability(jsonLd, html),
-    sourceUrl: url,
+    sourceUrl: canonicalUrl,
     source: 'Osso Skate Shop',
   };
 }
