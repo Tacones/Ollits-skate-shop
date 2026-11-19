@@ -11,31 +11,16 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="card-hover group border border-black bg-white">
       <Link href={`/produto/${product.id}`} className="block">
-        <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-[#e8e7df]">
-          {image ? (
-            <Image
-              src={image.src}
-              alt={image.alt || product.name}
-              fill
-              sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-contain p-5"
-            />
-          ) : (
-            <div className="px-6 text-center text-xs font-bold uppercase tracking-widest text-black/45">
-              Imagem do fornecedor será carregada na próxima sincronização
-            </div>
-          )}
-          {product.discountPercent ? (
-            <span className="absolute left-3 top-3 bg-[#d8ff35] px-2 py-1 text-[10px] font-black uppercase">
-              {product.discountPercentRaw || `${product.discountPercent}% OFF`}
-            </span>
-          ) : null}
+        <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-[#f0f0ee]">
+          {image ? <Image src={image.src} alt={image.alt || product.name} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-contain p-5 transition duration-300 group-hover:scale-[1.04]" /> : <div className="px-6 text-center text-[10px] font-bold uppercase tracking-widest text-black/40">Imagem não disponível</div>}
+          {product.discountPercent ? <span className="absolute left-3 top-3 bg-[#d71920] px-2 py-1 text-[9px] font-black uppercase text-white">{product.discountPercentRaw || `${product.discountPercent}% OFF`}</span> : null}
+          {!product.available ? <span className="absolute bottom-3 left-3 bg-black px-2 py-1 text-[9px] font-black uppercase text-white">Indisponível</span> : null}
         </div>
         <div className="p-4">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-black/45">{product.brand || product.category}</p>
-          <h3 className="mt-1 font-bold">{product.name}</h3>
-          {hasPromo ? <p className="mt-2 text-xs text-black/40 line-through">{product.priceRaw}</p> : null}
-          <p className="mt-1 text-sm font-semibold">R$ {currentPrice.toFixed(2).replace('.', ',')}</p>
+          <p className="text-[9px] font-black uppercase tracking-widest text-[#d71920]">{product.brand || product.category}</p>
+          <h3 className="mt-2 min-h-10 text-sm font-bold leading-snug">{product.name}</h3>
+          {hasPromo ? <p className="mt-3 text-xs text-black/40 line-through">{product.priceRaw}</p> : null}
+          <div className="mt-1 flex items-center justify-between"><p className="text-sm font-black">R$ {currentPrice.toFixed(2).replace('.', ',')}</p><span className="text-[9px] font-black uppercase underline underline-offset-4">Ver produto ↗</span></div>
         </div>
       </Link>
     </article>
