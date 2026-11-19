@@ -26,10 +26,10 @@ function normalizeText(value) { return stripHtml(String(value || '')).toLowerCas
 function parseMoney(value) {
   if (typeof value === 'number') return value;
   if (value === undefined || value === null || value === '') return undefined;
-  const normalized = String(value).trim().replace(/[^\\d,.-]/g, '');
+  const normalized = String(value).trim().replace(/[^\d,.-]/g, '');
   // Brazilian display values use comma decimals; JSON-LD commonly uses dot decimals.
   const canonical = normalized.includes(',')
-    ? normalized.replace(/\\./g, '').replace(',', '.')
+    ? normalized.replace(/\./g, '').replace(',', '.')
     : normalized;
   const number = Number(canonical);
   return Number.isFinite(number) ? number : undefined;
@@ -76,9 +76,9 @@ function extractImageUrls(html, jsonLd, productName) {
     let parsed;
     try { parsed = new URL(url); } catch { return; }
     const path = parsed.pathname;
-    const hasImageExtension = /\\.(?:jpe?g|png|webp|avif)$/i.test(path);
-    const productPath = /\\/products\\//i.test(path);
-    const knownImageCdn = /(?:cloudfront\\.net|mitiendanube\\.com)$/i.test(parsed.hostname);
+    const hasImageExtension = /\.(?:jpe?g|png|webp|avif)$/i.test(path);
+    const productPath = /\/products\//i.test(path);
+    const knownImageCdn = /(?:cloudfront\.net|mitiendanube\.com)$/i.test(parsed.hostname);
     if ((!hasImageExtension && !productPath) || rejectedAsset.test(path)) return;
     if (!productPath && !(allowCdn && knownImageCdn)) return;
     if (!urls.includes(url)) urls.push(url);
@@ -92,11 +92,11 @@ function extractImageUrls(html, jsonLd, productName) {
   if (ogImage) push(ogImage, { allowCdn: true });
 
   const normalizedName = normalizeText(productName || '');
-  for (const match of html.matchAll(/<img\\b[^>]*>/gi)) {
+  for (const match of html.matchAll(/<img\b[^>]*>/gi)) {
     const tag = match[0];
     const alt = normalizeText(tag.match(/alt=["']([^"']*)["']/i)?.[1] || '');
     const source = tag.match(/(?:src|data-src|data-large|data-image)=["']([^"']+)["']/i)?.[1];
-    if (source && ((alt && normalizedName && (alt.includes(normalizedName) || normalizedName.includes(alt))) || /\\/products\\//i.test(source))) {
+    if (source && ((alt && normalizedName && (alt.includes(normalizedName) || normalizedName.includes(alt))) || /\/products\//i.test(source))) {
       push(source, { allowCdn: true });
     }
   }
@@ -116,16 +116,16 @@ function extractStructuredPrice(html) {
 
 function extractVisiblePricePair(html, currentPrice) {
   const struckPrices = [];
-  for (const match of html.matchAll(/<(?:del|s|strike)\\b[^>]*>([\\s\\S]*?)<\\/(?:del|s|strike)>/gi)) {
-    for (const money of match[1].matchAll(/R\\$\\s*[\\d.]+,\\d{2}/g)) {
+  for (const match of html.matchAll(/<(?:del|s|strike)\b[^>]*>([\s\S]*?)<\/(?:del|s|strike)>/gi)) {
+    for (const money of match[1].matchAll(/R\$\s*[\d.]+,\d{2}/g)) {
       const parsed = parseMoney(money[0]);
       if (Number.isFinite(parsed) && parsed > (currentPrice ?? 0)) struckPrices.push(parsed);
     }
   }
   const original = struckPrices.find((value) => value > (currentPrice ?? 0));
-  const currentRaw = currentPrice === undefined ? undefined : `R$${currentPrice.toFixed(2).replace('.', ',')}`;
+  const currentRaw = currentPrice === undefined ? undefined : \`R$\${currentPrice.toFixed(2).replace('.', ',')}\`;
   return {
-    priceRaw: original === undefined ? currentRaw : `R$${original.toFixed(2).replace('.', ',')}`,
+    priceRaw: original === undefined ? currentRaw : \`R$\${original.toFixed(2).replace('.', ',')}\`,
     promotionalPriceRaw: original === undefined ? undefined : currentRaw,
   };
 }
@@ -214,7 +214,7 @@ async function parseProduct(url) {
   const parsedUrl = new URL(url);
   const canonicalUrl = absoluteUrl(jsonLd?.url) || url;
   return {
-    id: sku || new URL(canonicalUrl).pathname.replace(/^\/produtos\//, '').replace(/\/$/, ''),
+    id: new URL(canonicalUrl).pathname.split('/').filter(Boolean).at(-1) || sku,
     sku,
     name,
     brand: extractBrand(jsonLd, html),
