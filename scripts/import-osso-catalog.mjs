@@ -184,6 +184,30 @@ async function fetchHtml(url) {
   return response.text();
 }
 
+async function crawlSitemap() {
+  const discovered = new Set();
+  const rootUrl = BASE_URL + '/sitemap.xml';
+  try {
+    const root = await fetchHtml(rootUrl);
+    const locations = [...root.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/gi)].map((match) => decodeHtml(match[1].trim()));
+    const productUrls = locations.filter((url) => /\/produtos?\//i.test(new URL(url).pathname));
+    productUrls.forEach((url) => discovered.add(url));
+    const childSitemaps = locations.filter((url) => /\.xml(?:\?|$)/i.test(url));
+    for (const sitemapUrl of childSitemaps) {
+      const xml = await fetchHtml(sitemapUrl);
+      for (const match of xml.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/gi)) {
+        const url = decodeHtml(match[1].trim());
+        if (/\/produtos?\//i.test(new URL(url).pathname)) discovered.add(url);
+      }
+      await sleep(100);
+    }
+    console.log('Sitemap discovery found ' + discovered.size + ' product URLs across ' + locations.length + ' entries.');
+  } catch (error) {
+    console.warn('Sitemap discovery unavailable: ' + error.message);
+  }
+  return discovered;
+}
+
 async function crawlListing(path) {
   const links = new Set();
   for (let page = 1; page <= MAX_LISTING_PAGES; page += 1) {
@@ -193,7 +217,7 @@ async function crawlListing(path) {
       const productSnippets = [...html.matchAll(/.{0,100}produtos.{0,160}/gi)].slice(0, 5).map((match) => match[0].replace(/\s+/g, ' '));
       const productIndex = html.toLowerCase().indexOf('roda voltage');
       const hrefSamples = [...html.matchAll(/href\s*=\s*["']([^"']+)["']/gi)].map((match) => match[1]).filter((href) => /osso|produt|skate|\.com\.br/i.test(href)).slice(0, 35);
-      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; href samples=' + JSON.stringify(hrefSamples));
+      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; title=' + (html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] || 'no title'));
     }
     const pageLinks = extractProductLinks(html);
     pageLinks.forEach((link) => links.add(link));
@@ -244,7 +268,7 @@ async function parseProduct(url) {
 }
 
 async function main() {
-  const productUrls = new Set();
+  const productUrls = await crawlSitemap();
   for (const path of START_PATHS) {
     const links = await crawlListing(path);
     console.log(`Discovered ${links.size} product URLs from ${path}`);
