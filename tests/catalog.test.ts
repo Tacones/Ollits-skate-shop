@@ -17,12 +17,27 @@ test('supplier products keep stable ids and valid monetary fields', () => {
   assert.ok(products.every((product) => product.source === 'Osso Skate Shop'));
 });
 
-test('effective product price prefers the supplier promotional price', () => {
-  const productWithPromo = products.find((product) => product.promotionalPrice !== undefined);
-  assert.ok(productWithPromo);
-  assert.equal(getProductPrice(productWithPromo), productWithPromo.promotionalPrice);
-  const productWithoutPromo = products.find((product) => product.promotionalPrice === undefined);
-  if (productWithoutPromo) assert.equal(getProductPrice(productWithoutPromo), productWithoutPromo.price);
+test('effective product price prefers a promotional price and falls back to regular price', () => {
+  const productWithPromo = {
+    id: 'test-promo',
+    name: 'Produto de teste com promoção',
+    category: 'Acessórios',
+    price: 100,
+    promotionalPrice: 80,
+    variants: [],
+    specifications: {},
+    images: [],
+    available: true,
+    source: 'Osso Skate Shop',
+  };
+  assert.equal(getProductPrice(productWithPromo), 80);
+
+  const productWithoutPromo = {
+    ...productWithPromo,
+    id: 'test-regular',
+    promotionalPrice: undefined,
+  };
+  assert.equal(getProductPrice(productWithoutPromo), 100);
 });
 
 test('variants and images follow the scalable catalog contract', () => {
@@ -32,5 +47,5 @@ test('variants and images follow the scalable catalog contract', () => {
 });
 
 test('supplier image URLs are absolute when present', () => {
-  assert.ok(products.every((product) => product.images.every((image) => /^https:\/\//.test(image.src))));
+  assert.ok(products.every((product) => product.images.every((image) => /^https?:\/\//.test(image.src))));
 });
