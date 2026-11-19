@@ -189,7 +189,10 @@ async function crawlListing(path) {
   for (let page = 1; page <= MAX_LISTING_PAGES; page += 1) {
     const url = page === 1 ? `${BASE_URL}${path}` : `${BASE_URL}${path}${path.includes('?') ? '&' : '?'}page=${page}`;
     const html = await fetchHtml(url);
-    if (page === 1) console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; sample=' + html.slice(0, 180).replace(/\s+/g, ' '));
+    if (page === 1) {
+      const productSnippets = [...html.matchAll(/.{0,100}produtos.{0,160}/gi)].slice(0, 5).map((match) => match[0].replace(/\s+/g, ' '));
+      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; hrefs=' + [...html.matchAll(/href\s*=/gi)].length + '; product snippets=' + JSON.stringify(productSnippets));
+    }
     const pageLinks = extractProductLinks(html);
     pageLinks.forEach((link) => links.add(link));
     if (!pageLinks.length || pageLinks.length < 5) break;
