@@ -5,8 +5,11 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'www.ossoskateshop.com.br' },
+      { protocol: 'https', hostname: '**.ossoskateshop.com.br' },
       { protocol: 'https', hostname: 'd26lpennugtm8s.cloudfront.net' },
+      { protocol: 'https', hostname: '**.cloudfront.net' },
       { protocol: 'https', hostname: 'dcdn-us.mitiendanube.com' },
+      { protocol: 'https', hostname: '**.mitiendanube.com' },
     ],
   },
 };
