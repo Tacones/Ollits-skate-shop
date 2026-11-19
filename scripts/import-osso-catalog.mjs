@@ -25,9 +25,13 @@ function normalizeText(value) { return stripHtml(String(value || '')).toLowerCas
 
 function parseMoney(value) {
   if (typeof value === 'number') return value;
-  if (!value) return undefined;
-  const normalized = String(value).replace(/[^\d,.-]/g, '').replace(/\./g, '').replace(',', '.');
-  const number = Number(normalized);
+  if (value === undefined || value === null || value === '') return undefined;
+  const normalized = String(value).trim().replace(/[^\\d,.-]/g, '');
+  // Brazilian display values use comma decimals; JSON-LD commonly uses dot decimals.
+  const canonical = normalized.includes(',')
+    ? normalized.replace(/\\./g, '').replace(',', '.')
+    : normalized;
+  const number = Number(canonical);
   return Number.isFinite(number) ? number : undefined;
 }
 
@@ -60,21 +64,41 @@ function extractProductLinks(html) {
   return [...links];
 }
 
-function extractImageUrls(html, jsonLd) {
+function extractImageUrls(html, jsonLd, productName) {
   const urls = [];
-  const push = (value) => {
-    const url = absoluteUrl(value);
-    if (!url || !/\.(?:jpe?g|png|webp|avif)(?:\?|$)/i.test(url)) return;
-    const isProductImage = /\/stores\/[^/]+\/products\//i.test(new URL(url).pathname);
-    if (!isProductImage || urls.includes(url)) return;
-    urls.push(url);
+  const rejectedAsset = /(?:payment|visa|mastercard|boleto|pix|amex|hiper|shipping|frete|logo|selo)/i;
+  const push = (value, { allowCdn = false } = {}) => {
+    const candidate = typeof value === 'object' && value !== null
+      ? value.url || value.contentUrl || value['@id']
+      : value;
+    const url = absoluteUrl(candidate);
+    if (!url) return;
+    let parsed;
+    try { parsed = new URL(url); } catch { return; }
+    const path = parsed.pathname;
+    const hasImageExtension = /\\.(?:jpe?g|png|webp|avif)$/i.test(path);
+    const productPath = /\\/products\\//i.test(path);
+    const knownImageCdn = /(?:cloudfront\\.net|mitiendanube\\.com)$/i.test(parsed.hostname);
+    if ((!hasImageExtension && !productPath) || rejectedAsset.test(path)) return;
+    if (!productPath && !(allowCdn && knownImageCdn)) return;
+    if (!urls.includes(url)) urls.push(url);
   };
+
   const jsonImages = jsonLd?.image;
-  if (Array.isArray(jsonImages)) jsonImages.forEach(push);
-  else if (typeof jsonImages === 'string') push(jsonImages);
-  if (!urls.length) push(html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]);
-  if (!urls.length) {
-    for (const match of html.matchAll(/(?:src|data-src|data-large|data-image)=["']([^"']+)["']/gi)) push(match[1]);
+  if (Array.isArray(jsonImages)) jsonImages.forEach((image) => push(image, { allowCdn: true }));
+  else if (jsonImages) push(jsonImages, { allowCdn: true });
+
+  const ogImage = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1];
+  if (ogImage) push(ogImage, { allowCdn: true });
+
+  const normalizedName = normalizeText(productName || '');
+  for (const match of html.matchAll(/<img\\b[^>]*>/gi)) {
+    const tag = match[0];
+    const alt = normalizeText(tag.match(/alt=["']([^"']*)["']/i)?.[1] || '');
+    const source = tag.match(/(?:src|data-src|data-large|data-image)=["']([^"']+)["']/i)?.[1];
+    if (source && ((alt && normalizedName && (alt.includes(normalizedName) || normalizedName.includes(alt))) || /\\/products\\//i.test(source))) {
+      push(source, { allowCdn: true });
+    }
   }
   return urls;
 }
@@ -91,16 +115,18 @@ function extractStructuredPrice(html) {
 }
 
 function extractVisiblePricePair(html, currentPrice) {
-  const money = [...html.matchAll(/R\$\s*[\d.]+,\d{2}/g)].map((match) => match[0].replace(/\s+/g, ' '));
-  const unique = [...new Set(money)];
-  const current = unique.find((value) => Math.abs((parseMoney(value) ?? -1) - (currentPrice ?? -2)) < 0.001);
-  if (!current) return {};
-  const currentIndex = unique.indexOf(current);
-  const before = unique.slice(Math.max(0, currentIndex - 4), currentIndex).map(parseMoney).filter(Number.isFinite);
-  const original = before.find((value) => value > (currentPrice ?? 0));
+  const struckPrices = [];
+  for (const match of html.matchAll(/<(?:del|s|strike)\\b[^>]*>([\\s\\S]*?)<\\/(?:del|s|strike)>/gi)) {
+    for (const money of match[1].matchAll(/R\\$\\s*[\\d.]+,\\d{2}/g)) {
+      const parsed = parseMoney(money[0]);
+      if (Number.isFinite(parsed) && parsed > (currentPrice ?? 0)) struckPrices.push(parsed);
+    }
+  }
+  const original = struckPrices.find((value) => value > (currentPrice ?? 0));
+  const currentRaw = currentPrice === undefined ? undefined : `R$${currentPrice.toFixed(2).replace('.', ',')}`;
   return {
-    priceRaw: original === undefined ? current : `R$${original.toFixed(2).replace('.', ',')}`,
-    promotionalPriceRaw: original === undefined ? undefined : current,
+    priceRaw: original === undefined ? currentRaw : `R$${original.toFixed(2).replace('.', ',')}`,
+    promotionalPriceRaw: original === undefined ? undefined : currentRaw,
   };
 }
 
@@ -183,7 +209,7 @@ async function parseProduct(url) {
   const promotionalPrice = visiblePair.promotionalPriceRaw ? parseMoney(visiblePair.promotionalPriceRaw) : undefined;
   const discountPercent = extractDiscount(html);
   const description = jsonLd?.description ? stripHtml(String(jsonLd.description)) : undefined;
-  const images = extractImageUrls(html, jsonLd).map((src, index) => ({ src, alt: name, position: index + 1 }));
+  const images = extractImageUrls(html, jsonLd, name).map((src, index) => ({ src, alt: name, position: index + 1 }));
   const sku = jsonLd?.sku || jsonLd?.mpn || undefined;
   const parsedUrl = new URL(url);
   const canonicalUrl = absoluteUrl(jsonLd?.url) || url;
