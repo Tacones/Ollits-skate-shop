@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { ProductCard } from '@/components/product-card';
-import { products } from '@/data/products';
+import { featuredProducts } from '@/data/products';
 
 export default function Home() {
-  const featured = products.filter((p) => p.featured);
+  const featured = featuredProducts;
   return (
     <>
       <div className="marquee"><div className="container-ollits"><span>Skate para a rua</span><span>Setup sob medida</span><span>Ollits Culture</span><span>Skate para a rua</span></div></div>
