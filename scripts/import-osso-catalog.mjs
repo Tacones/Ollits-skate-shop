@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 const BASE_URL = 'https://www.ossoskateshop.com.br';
 const START_PATHS = ['/produtos/', '/skate/', '/skate/acessorios/', '/vestuario/'];
 const MAX_LISTING_PAGES = 60;
+const MIN_EXPECTED_PRODUCTS = 800;
 const USER_AGENT = 'OllitsCatalogImporter/1.0 (+https://github.com/Tacones/Ollits-skate-shop)';
 const sleep = (ms) => new Promise((resolvePromise) => setTimeout(resolvePromise, ms));
 
@@ -186,7 +187,7 @@ async function fetchHtml(url) {
 async function crawlListing(path) {
   const links = new Set();
   for (let page = 1; page <= MAX_LISTING_PAGES; page += 1) {
-    const url = `${BASE_URL}${path}${path.includes('?') ? '&' : '?'}page=${page}`;
+    const url = page === 1 ? `${BASE_URL}${path}` : `${BASE_URL}${path}${path.includes('?') ? '&' : '?'}page=${page}`;
     const html = await fetchHtml(url);
     const pageLinks = extractProductLinks(html);
     pageLinks.forEach((link) => links.add(link));
@@ -240,7 +241,12 @@ async function main() {
   const productUrls = new Set();
   for (const path of START_PATHS) {
     const links = await crawlListing(path);
+    console.log(`Discovered ${links.size} product URLs from ${path}`);
     links.forEach((link) => productUrls.add(link));
+  }
+
+  if (productUrls.size < MIN_EXPECTED_PRODUCTS) {
+    throw new Error(`Catalog discovery returned only ${productUrls.size} products; refusing to overwrite the last complete snapshot (minimum ${MIN_EXPECTED_PRODUCTS}).`);
   }
 
   const products = [];
@@ -255,6 +261,9 @@ async function main() {
   }
 
   products.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
+  if (products.length < MIN_EXPECTED_PRODUCTS) {
+    throw new Error(`Only ${products.length} products could be parsed; refusing to overwrite the last complete snapshot.`);
+  }
   const payload = {
     source: 'Osso Skate Shop',
     sourceUrl: BASE_URL,
