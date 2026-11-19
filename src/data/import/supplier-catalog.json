@@ -2,7 +2,7 @@
   "source": "Osso Skate Shop",
   "sourceUrl": "https://www.ossoskateshop.com.br",
   "authorized": true,
-  "importedAt": "2026-11-19T18:20:32.310Z",
+  "importedAt": "2026-11-19T22:08:18.896Z",
   "importer": "scripts/import-osso-catalog.mjs",
   "products": [
     {
@@ -353,21 +353,21 @@
     },
     {
       "id": "amortecedor-black-sheep-hard-98a-red-1a42x",
-      "sku": "amortece-pig-91a-1",
+      "sku": "kit-amort-thunder-100a",
       "name": "Amortecedor Black Sheep Hard 98A - Red",
-      "brand": "Pig Wheels",
+      "brand": "Thunder Trucks",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 69.9,
-      "priceRaw": "R$69,90",
+      "price": 129.9,
+      "priceRaw": "R$129,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Amortecedor Pig 91A por R$69,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Kit Amortecedor, Arruelas e Porcas Thunder 100a por R$129,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/8-d88adc3ea2712fce8a17507767102598-1024-1024-26fc7002aa8aa8d71f17612426652402-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/amortecedor_thunder_kit_rebuilt_super_hard_100a_10859_1_0ec4115eacf9967db3799b83c08c78b5-809d3e5b44c831c52d17655466668343-480-0.webp",
           "alt": "Amortecedor Black Sheep Hard 98A - Red",
           "position": 1
         },
@@ -1688,9 +1688,9 @@
     },
     {
       "id": "amortecedor-venture-90a",
-      "sku": "amortece-pig-91a-1",
+      "sku": "amorteced-thunder-orange-90",
       "name": "Amortecedor Venture 90A",
-      "brand": "Pig Wheels",
+      "brand": "Thunder Trucks",
       "category": "Acessórios",
       "department": "produtos",
       "price": 69.9,
@@ -1698,11 +1698,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Amortecedor Pig 91A por R$69,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Amortecedor Thunder 90A Orange por R$69,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/8-d88adc3ea2712fce8a17507767102598-1024-1024-26fc7002aa8aa8d71f17612426652402-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/16_16_40_942_528167ceddad31b565151d31cb2a0aac-504a7853a2dab8b53e17846475370419-480-0.webp",
           "alt": "Amortecedor Venture 90A",
           "position": 1
         },
@@ -2186,13 +2186,13 @@
     },
     {
       "id": "bermuda-carpinteiro-black-diet-skateboards",
-      "sku": "bermuda-d-Diet Skateboard-basquete.basquete",
+      "sku": "bermuda-chinoflex-preto",
       "name": "Bermuda Carpinteiro Black Diet Skateboards",
       "brand": "Diet Skateboard",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 189.9,
-      "priceRaw": "R$189,90",
+      "price": 199.9,
+      "priceRaw": "R$199,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -2257,11 +2257,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Bermuda Diet Skateboards Basquete por R$189,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Bermuda Chinoflex Diet Skateboards Preta por R$199,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/bermuda-basquete-preta-1-5905bc9977b1f8f2f717601411806206-480-0-aeb654854d8302d91217652018847832-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_4zx94c4zx94c4zx9-3c7bdb03b0bf13536a17871503446327-480-0.webp",
           "alt": "Bermuda Carpinteiro Black Diet Skateboards",
           "position": 1
         },
@@ -2718,13 +2718,13 @@
     },
     {
       "id": "bermuda-diet-skateboards-cargo-zoo-caqui-45zl7",
-      "sku": "bermuda-chinoflex-preto",
+      "sku": "bermuda-c-d-diet skateboard-.10-bege",
       "name": "Bermuda Diet Skateboards Cargo Zoo Cáqui",
       "brand": "Diet Skateboard",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 199.9,
-      "priceRaw": "R$199,90",
+      "price": 149.9,
+      "priceRaw": "R$149,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -2738,12 +2738,6 @@
           "id": "variation-0-m",
           "name": "variation[0]",
           "value": "M",
-          "available": true
-        },
-        {
-          "id": "variation-0-g",
-          "name": "variation[0]",
-          "value": "G",
           "available": true
         },
         {
@@ -2787,13 +2781,19 @@
           "name": "variation[0]",
           "value": "XG",
           "available": true
+        },
+        {
+          "id": "variation-0-g",
+          "name": "variation[0]",
+          "value": "G",
+          "available": true
         }
       ],
-      "description": "Compre online Bermuda Chinoflex Diet Skateboards Preta por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Bermuda Cargo Diet Skateboards Infantil por R$149,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_4zx94c4zx94c4zx9-3c7bdb03b0bf13536a17871503446327-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/bermuda-diet-infantil-preta-ed8b860e9c671f3ede17519086269640-480-0.webp",
           "alt": "Bermuda Diet Skateboards Cargo Zoo Cáqui",
           "position": 1
         },
@@ -4504,13 +4504,13 @@
     },
     {
       "id": "calca-chinoflex-diet-skateboards-preta",
-      "sku": "bermuda-chinoflex-marrom",
+      "sku": "bermuda-d-sk-cargo-zoo.preta",
       "name": "Calça Chinoflex Diet Skateboards Preta",
       "brand": "Diet Skateboard",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 199.9,
-      "priceRaw": "R$199,90",
+      "price": 189.9,
+      "priceRaw": "R$189,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -4530,6 +4530,12 @@
           "id": "variation-0-g",
           "name": "variation[0]",
           "value": "G",
+          "available": true
+        },
+        {
+          "id": "variation-0-xg",
+          "name": "variation[0]",
+          "value": "XG",
           "available": true
         },
         {
@@ -4567,19 +4573,13 @@
           "name": "variation[1]",
           "value": "Preto",
           "available": true
-        },
-        {
-          "id": "variation-0-xg",
-          "name": "variation[0]",
-          "value": "XG",
-          "available": true
         }
       ],
-      "description": "Compre online Bermuda Chinoflex Diet Skateboards Marrom por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Bermuda Diet Skateboards Cargo Zoo Preta por R$189,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_o40fcoo40fcoo40f-5a5139d9fa8abe655717871470115276-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/bermuda-zoo-preta-1-1459eaf63ad88997b017601136852480-480-0-3be3f5015dee74db7b17652033294494-480-0.webp",
           "alt": "Calça Chinoflex Diet Skateboards Preta",
           "position": 1
         },
@@ -5103,13 +5103,13 @@
     },
     {
       "id": "calca-jeans-diet-skateboards-19e8r",
-      "sku": "bermuda-chinoflex-marrom",
+      "sku": "bermuda-bs-skatebo",
       "name": "Calça Jeans Diet Skateboards",
       "brand": "Diet Skateboard",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 199.9,
-      "priceRaw": "R$199,90",
+      "price": 179.9,
+      "priceRaw": "R$179,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -5123,18 +5123,6 @@
           "id": "variation-0-gg",
           "name": "variation[0]",
           "value": "GG",
-          "available": true
-        },
-        {
-          "id": "variation-0-g",
-          "name": "variation[0]",
-          "value": "G",
-          "available": true
-        },
-        {
-          "id": "variation-0-xg",
-          "name": "variation[0]",
-          "value": "XG",
           "available": true
         },
         {
@@ -5172,13 +5160,25 @@
           "name": "variation[1]",
           "value": "Preto",
           "available": true
+        },
+        {
+          "id": "variation-0-xg",
+          "name": "variation[0]",
+          "value": "XG",
+          "available": true
+        },
+        {
+          "id": "variation-0-g",
+          "name": "variation[0]",
+          "value": "G",
+          "available": true
         }
       ],
-      "description": "Compre online Bermuda Chinoflex Diet Skateboards Marrom por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Bermuda Black Jeans Diet Skateboards por R$179,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_o40fcoo40fcoo40f-5a5139d9fa8abe655717871470115276-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_f6ggfzf6ggfzf6gg-3659ea05d5785e2dfc17872522391722-480-0.webp",
           "alt": "Calça Jeans Diet Skateboards",
           "position": 1
         },
@@ -6081,13 +6081,13 @@
     },
     {
       "id": "camiseta-black-sheep-brasil-13-ofw86",
-      "sku": "amortece-98a-purple",
+      "sku": "skate-com-b-she-hulk",
       "name": "Camiseta Black Sheep Brasil 13",
       "brand": "Black Sheep",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 29.9,
-      "priceRaw": "R$29,90",
+      "price": 259.9,
+      "priceRaw": "R$259,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -6107,6 +6107,12 @@
           "id": "variation-1-amarelo",
           "name": "variation[1]",
           "value": "Amarelo",
+          "available": true
+        },
+        {
+          "id": "variation-0-53mm",
+          "name": "variation[0]",
+          "value": "53mm",
           "available": true
         },
         {
@@ -6164,11 +6170,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Amortecedor Black Sheep Hard 98A - Purple por R$29,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Completo Semi Profissional Black Sheep Hulk por R$259,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_egtqkmegtqkmegtq-85cb8b92bd59cefff717925083351981-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_52zf4l52zf4l52zf-af1883f4d4641da92717870761767369-480-0.webp",
           "alt": "Camiseta Black Sheep Brasil 13",
           "position": 1
         },
@@ -6327,13 +6333,13 @@
     },
     {
       "id": "camiseta-black-sheep-car",
-      "sku": "roda-bs-importada-white-55mm",
+      "sku": "bone-fechado-bs",
       "name": "Camiseta Black Sheep Car",
-      "brand": "black sheep",
+      "brand": "Black Sheep",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 199.9,
-      "priceRaw": "R$199,90",
+      "price": 89.9,
+      "priceRaw": "R$89,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -6356,17 +6362,29 @@
           "available": true
         },
         {
+          "id": "variation-0-g",
+          "name": "variation[0]",
+          "value": "G",
+          "available": true
+        },
+        {
+          "id": "variation-1-amarelo",
+          "name": "variation[1]",
+          "value": "Amarelo",
+          "available": true
+        },
+        {
           "id": "variation-0-53mm",
           "name": "variation[0]",
           "value": "53mm",
           "available": true
         }
       ],
-      "description": "Compre online Roda Black Sheep 55mm Importada 102A Wheels White por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Boné Fechado Black Sheep por R$89,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/roda-black-sheep-55mm-importada-102a-wheels-white-5208019a3b10159a4317139817865622-1024-1024-8c005f9f477787509c17870587465570-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/54df7b5d-bd22-4bfc-b515-98691866e777-bd2300927354947bcd17866714307146-1024-1024-1b7f585b0eb1c8b8eb17870561690502-480-0.webp",
           "alt": "Camiseta Black Sheep Car",
           "position": 1
         },
@@ -11717,7 +11735,7 @@
     },
     {
       "id": "cueca-boxer-dc-shoes-vermelha",
-      "sku": "meia-dc-c-cano-al-alto-azul.branco",
+      "sku": "meia-dc-c-cano-al-alto.azul-",
       "name": "Cueca Boxer DC Shoes Vermelha",
       "brand": "DC Shoes",
       "category": "Acessórios",
@@ -11734,23 +11752,17 @@
           "available": true
         },
         {
-          "id": "variation-0-gg",
-          "name": "variation[0]",
-          "value": "GG",
-          "available": true
-        },
-        {
           "id": "variation-0-preto",
           "name": "variation[0]",
           "value": "Preto",
           "available": true
         }
       ],
-      "description": "Compre online Meia DC Cano Alto Azul Branco por R$35,00. Faça seu pedido e pague-o online.",
+      "description": "Compre online Meia DC Cano Alto Azul Laranja por R$35,00. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia_dc_shoes_cano_alto_alta_performance_branco_azul_dc23a_13903_1_dc31fabe4a773562602e4f7d459dba83-320b2fe77c6a8fabe717682298098878-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-dc-azul-com-laranja-13f2e86676e289314317497518163707-480-0.webp",
           "alt": "Cueca Boxer DC Shoes Vermelha",
           "position": 1
         },
@@ -12952,22 +12964,16 @@
     },
     {
       "id": "gorro-black-sheep-mhejs",
-      "sku": "lixa-embo-Bs-camuorange",
+      "sku": "camiseta-bs-brasil13-gg",
       "name": "Gorro Black Sheep Azul",
       "brand": "Black Sheep",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 69.9,
+      "priceRaw": "R$69,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
-        {
-          "id": "variation-0-53mm",
-          "name": "variation[0]",
-          "value": "53mm",
-          "available": true
-        },
         {
           "id": "variation-0-g",
           "name": "variation[0]",
@@ -12985,13 +12991,73 @@
           "name": "variation[1]",
           "value": "Amarelo",
           "available": true
+        },
+        {
+          "id": "variation-0-53mm",
+          "name": "variation[0]",
+          "value": "53mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-amarelo",
+          "name": "variation[0]",
+          "value": "Amarelo",
+          "available": true
+        },
+        {
+          "id": "variation-0-azul",
+          "name": "variation[0]",
+          "value": "Azul",
+          "available": true
+        },
+        {
+          "id": "variation-0-rosa",
+          "name": "variation[0]",
+          "value": "Rosa",
+          "available": true
+        },
+        {
+          "id": "variation-0-roxo",
+          "name": "variation[0]",
+          "value": "Roxo",
+          "available": true
+        },
+        {
+          "id": "variation-0-verde",
+          "name": "variation[0]",
+          "value": "Verde",
+          "available": true
+        },
+        {
+          "id": "variation-0-preto",
+          "name": "variation[0]",
+          "value": "Preto",
+          "available": true
+        },
+        {
+          "id": "variation-0-laranja",
+          "name": "variation[0]",
+          "value": "Laranja",
+          "available": true
+        },
+        {
+          "id": "variation-1-53mm",
+          "name": "variation[1]",
+          "value": "53MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-55mm",
+          "name": "variation[0]",
+          "value": "55MM",
+          "available": true
         }
       ],
-      "description": "Compre online Lixa Emborrachada Black Sheep Camu Orange por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Camiseta Black Sheep Brasil 13 por R$69,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-emborrachada-importada-black-sheep-camo-orange-3a672d4b9fcc26693317144153381440-1024-1024-76af9e7a4dab4baf1817897393145404-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/camiseta-black-sheep-amarela-1-7932cff82e88edaf2017811164977304-480-0.webp",
           "alt": "Gorro Black Sheep Azul",
           "position": 1
         },
@@ -13266,13 +13332,13 @@
     },
     {
       "id": "kit-amortecedor-lyons-95a",
-      "sku": "amor-bones-black-medium",
+      "sku": "amortece-superhard-inde-96",
       "name": "Kit Amortecedor Lyons 95A",
-      "brand": "Bones",
+      "brand": "Independent Trucks",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 179.9,
-      "priceRaw": "R$179,90",
+      "price": 109.9,
+      "priceRaw": "R$109,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -13289,11 +13355,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Amortecedor Bones Black Mediun por R$179,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Amortecedor Independent 96 Super Hard Yellow por R$109,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/amortecedores_bones_medium_black_1_20251217120621_c84d535fec9a-64351640e6c394ca2b17897364262967-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/amortecedor_independent_super_hard_cilindrico_yellow_96a_863_1_2a98256af0bc832343d7888ae6476102_20220707170016-f3b18c7e810c03d3a317846466915407-480-0.webp",
           "alt": "Kit Amortecedor Lyons 95A",
           "position": 1
         },
@@ -14831,7 +14897,7 @@
     },
     {
       "id": "kit-protecao-triple-eight-importado-yj1qi",
-      "sku": "capa-azulclaro-p",
+      "sku": "capa-amarfluor-pp",
       "name": "Kit Proteção Triple Eight Importado",
       "brand": "Jumppings",
       "category": "Acessórios",
@@ -14860,9 +14926,9 @@
           "available": true
         },
         {
-          "id": "variation-0-azul-claro",
+          "id": "variation-0-amarelo",
           "name": "variation[0]",
-          "value": "Azul claro",
+          "value": "Amarelo",
           "available": true
         },
         {
@@ -14896,15 +14962,21 @@
           "available": true
         },
         {
+          "id": "variation-0-azul",
+          "name": "variation[0]",
+          "value": "Azul",
+          "available": true
+        },
+        {
           "id": "variation-0-preto",
           "name": "variation[0]",
           "value": "Preto",
           "available": true
         },
         {
-          "id": "variation-0-azul",
+          "id": "variation-0-azul-claro",
           "name": "variation[0]",
-          "value": "Azul",
+          "value": "Azul claro",
           "available": true
         },
         {
@@ -14912,19 +14984,13 @@
           "name": "variation[0]",
           "value": "Roxo",
           "available": true
-        },
-        {
-          "id": "variation-0-amarelo",
-          "name": "variation[0]",
-          "value": "Amarelo",
-          "available": true
         }
       ],
-      "description": "Compre online Capacete para esportes radicais Jumppings Azul Claro por R$89,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Capacete para esportes radicais Jumppings Amarelo Fluorescente por R$89,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/capacete-azul-f831301d5bf77e5a7c17805075208819-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/capacete-amarelo-fluorescente-59f6858b76fd18810d17805000314874-480-0.webp",
           "alt": "Kit Proteção Triple Eight Importado",
           "position": 1
         },
@@ -14965,26 +15031,20 @@
     },
     {
       "id": "kit-truck-simulador-de-surfrodasrolamentospads-e-parafusos-de-base-1yv43",
-      "sku": "roda-long-70mm",
+      "sku": "shp-long-lyons-leao",
       "name": "Kit Truck Simulador de Surf+Rodas+Rolamentos+Pads e Parafusos de Base",
-      "brand": "s/\">Marcas",
+      "brand": "Lyons skateboards",
       "category": "Rodas",
       "department": "produtos",
-      "price": 179.9,
-      "priceRaw": "R$179,90",
+      "price": 199.9,
+      "priceRaw": "R$199,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
         {
-          "id": "variation-0-70mm",
+          "id": "variation-0-180mm",
           "name": "variation[0]",
-          "value": "70MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-74mm",
-          "name": "variation[0]",
-          "value": "74mm",
+          "value": "180MM",
           "available": true
         },
         {
@@ -14998,13 +15058,19 @@
           "name": "variation[0]",
           "value": "60mm",
           "available": true
+        },
+        {
+          "id": "variation-0-65mm",
+          "name": "variation[0]",
+          "value": "65mm",
+          "available": true
         }
       ],
-      "description": "Compre online Roda Longboard 70mm por R$179,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Longboard Lyons Leão Com Lixa por R$199,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/roda-long-0ee99d025a9499cb6517507941433126-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-long-lyons-leao-dd0fe949bb7cafe1d817816404418376-480-0.webp",
           "alt": "Kit Truck Simulador de Surf+Rodas+Rolamentos+Pads e Parafusos de Base",
           "position": 1
         },
@@ -15555,21 +15621,21 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-blue-1137n",
-      "sku": "lixa-embo-milk-Bigflower",
+      "sku": "lixa-primi-tupac",
       "name": "Lixa Emborrachada Grizzly Blue",
-      "brand": "Milk Skateboards",
+      "brand": "Primitive Skateboards",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 99.9,
+      "priceRaw": "R$99,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Milk Big Flower por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Primitive Tupac por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-big-flower-3b5ed95f8ddad145b217730876081783-1024-1024-35d08781c14be9899017918994178713-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-primitive-tupac-127b993e101ff0847117926773760497-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly Blue",
           "position": 1
         },
@@ -15635,21 +15701,21 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-logo-green-154qp",
-      "sku": "lixa-embo-milk-misfits",
+      "sku": "lixa-emb-supre-rip",
       "name": "Lixa Emborrachada Grizzly Logo Green",
-      "brand": "Milk Skateboards",
+      "brand": "Supreme",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 99.9,
+      "priceRaw": "R$99,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Milk Misfits por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Supreme X Ripndip por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-misftis-e2c96526714342054c17918986407317-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/1-ea25d7fb6ef3fab63d17291120127019-1024-1024-87fde9e4485903b61117914839255859-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly Logo Green",
           "position": 1
         },
@@ -15670,21 +15736,21 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-logo-orange-15v3x",
-      "sku": "lixa-embo-milk-walkman",
+      "sku": "lixa-emb-supre-rip",
       "name": "Lixa Emborrachada Grizzly Logo Orange",
-      "brand": "Milk Skateboards",
+      "brand": "Supreme",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 99.9,
+      "priceRaw": "R$99,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Milk Walkman por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Supreme X Ripndip por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-retro-monsters-walkman-jpg-c05adfa00be5b2e1cc17918993376920-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/1-ea25d7fb6ef3fab63d17291120127019-1024-1024-87fde9e4485903b61117914839255859-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly Logo Orange",
           "position": 1
         },
@@ -15705,21 +15771,21 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-logo-red-72389",
-      "sku": "lixa-embo-milk-misfits",
+      "sku": "lixa-primi-tupac",
       "name": "Lixa Emborrachada Grizzly Logo Red",
-      "brand": "Milk Skateboards",
+      "brand": "Primitive Skateboards",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 99.9,
+      "priceRaw": "R$99,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Milk Misfits por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Primitive Tupac por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-misftis-e2c96526714342054c17918986407317-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-primitive-tupac-127b993e101ff0847117926773760497-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly Logo Red",
           "position": 1
         },
@@ -15940,21 +16006,21 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-logo-tie-dye",
-      "sku": "lixa-embo-ripndi-Cats",
+      "sku": "lixa-primi-Notorious",
       "name": "Lixa Emborrachada Grizzly T-Puds Tie Dye",
-      "brand": "Ripndip",
+      "brand": "Primitive Skateboards",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 79.9,
-      "priceRaw": "R$79,90",
+      "price": 99.9,
+      "priceRaw": "R$99,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Ripndip Cats por R$79,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Primitive Notorious por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_4761-65eca0e338a0407bd517448159168679-1024-1024-a9bb93bcd68ad40b7817914846887752-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-primitive-notorious-299bab1ecde19472c117926774391994-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly T-Puds Tie Dye",
           "position": 1
         },
@@ -16080,28 +16146,33 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-torrey-pudwill-camu-14g05",
-      "sku": "lixa-grizz-small-white",
+      "sku": "lixa-emb-supre-rip",
       "name": "Lixa Emborrachada Grizzly Torey Pudwill Camu",
-      "brand": "Grizzly Griptape",
+      "brand": "Supreme",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 85,
-      "priceRaw": "R$85,00",
+      "price": 99.9,
+      "priceRaw": "R$99,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Grizzly Small Logo White por R$85,00. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Supreme X Ripndip por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "http://acdn-us.mitiendanube.com/stores/004/253/224/products/grizzly-camu-t-puds-b74276b7ee8619477117792950039268-640-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/1-ea25d7fb6ef3fab63d17291120127019-1024-1024-87fde9e4485903b61117914839255859-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly Torey Pudwill Camu",
           "position": 1
         },
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/grizzly-camu-t-puds-b74276b7ee8619477117792950039268-480-0.webp",
+          "src": "http://acdn-us.mitiendanube.com/stores/004/253/224/products/grizzly-camu-t-puds-b74276b7ee8619477117792950039268-640-0.webp",
           "alt": "Lixa Emborrachada Grizzly Torey Pudwill Camu",
           "position": 2
+        },
+        {
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/grizzly-camu-t-puds-b74276b7ee8619477117792950039268-480-0.webp",
+          "alt": "Lixa Emborrachada Grizzly Torey Pudwill Camu",
+          "position": 3
         }
       ],
       "available": true,
@@ -16180,9 +16251,9 @@
     },
     {
       "id": "lixa-emborrachada-grizzly-trip-bear-1b5uc",
-      "sku": "lixa-emb-supre-rip",
+      "sku": "lixa-primi-tupac",
       "name": "Lixa Emborrachada Grizzly Trip Bear",
-      "brand": "Supreme",
+      "brand": "Primitive Skateboards",
       "category": "Acessórios",
       "department": "produtos",
       "price": 99.9,
@@ -16190,11 +16261,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Supreme X Ripndip por R$99,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Primitive Tupac por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/1-ea25d7fb6ef3fab63d17291120127019-1024-1024-87fde9e4485903b61117914839255859-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-primitive-tupac-127b993e101ff0847117926773760497-480-0.webp",
           "alt": "Lixa Emborrachada Grizzly Trip Bear",
           "position": 1
         },
@@ -16545,21 +16616,21 @@
     },
     {
       "id": "lixa-emborrachada-milk-doom-78pe4",
-      "sku": "lixa-embo-milk-Bigflower",
+      "sku": "lixa-embo-ripndi-Cats",
       "name": "Lixa Emborrachada Milk Doom",
-      "brand": "Milk Skateboards",
+      "brand": "Ripndip",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 79.9,
+      "priceRaw": "R$79,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Milk Big Flower por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Ripndip Cats por R$79,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-big-flower-3b5ed95f8ddad145b217730876081783-1024-1024-35d08781c14be9899017918994178713-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_4761-65eca0e338a0407bd517448159168679-1024-1024-a9bb93bcd68ad40b7817914846887752-480-0.webp",
           "alt": "Lixa Emborrachada Milk Doom",
           "position": 1
         },
@@ -17110,21 +17181,21 @@
     },
     {
       "id": "lixa-emborrachada-peppers-black-grip-sheet",
-      "sku": "lixa-embo-milk-Bigflower",
+      "sku": "lixa-embo-milk.lisa-larga",
       "name": "Lixa Emborrachada Peppers XG Grip Sheet",
       "brand": "Milk Skateboards",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 59.9,
-      "priceRaw": "R$59,90",
+      "price": 54.9,
+      "priceRaw": "R$54,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Lixa Emborrachada Milk Big Flower por R$59,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Lixa Emborrachada Milk Old School 10.0 X 33 por R$54,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-big-flower-3b5ed95f8ddad145b217730876081783-1024-1024-35d08781c14be9899017918994178713-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/lixa-milk-preta-419535b3db4abd25c317919027964004-480-0.webp",
           "alt": "Lixa Emborrachada Peppers XG Grip Sheet",
           "position": 1
         },
@@ -18245,26 +18316,20 @@
     },
     {
       "id": "luva-pata-de-vaca-1jowx",
-      "sku": "kit-prote-kronik-gg",
+      "sku": "capa-bic-pp",
       "name": "Luva Pata de Vaca",
-      "brand": "Kronik",
+      "brand": "Jumppings",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 239.9,
-      "priceRaw": "R$239,90",
+      "price": 89.9,
+      "priceRaw": "R$89,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
         {
-          "id": "variation-0-gg",
+          "id": "variation-0-azul",
           "name": "variation[0]",
-          "value": "GG",
-          "available": true
-        },
-        {
-          "id": "variation-0-amarelo",
-          "name": "variation[0]",
-          "value": "Amarelo",
+          "value": "Azul",
           "available": true
         },
         {
@@ -18298,39 +18363,21 @@
           "available": true
         },
         {
-          "id": "variation-0-roxo",
-          "name": "variation[0]",
-          "value": "Roxo",
-          "available": true
-        },
-        {
           "id": "variation-0-laranja",
           "name": "variation[0]",
           "value": "Laranja",
           "available": true
         },
         {
-          "id": "variation-0-p",
+          "id": "variation-0-roxo",
           "name": "variation[0]",
-          "value": "P",
+          "value": "Roxo",
           "available": true
         },
         {
-          "id": "variation-0-m",
+          "id": "variation-0-cinza",
           "name": "variation[0]",
-          "value": "M",
-          "available": true
-        },
-        {
-          "id": "variation-0-g",
-          "name": "variation[0]",
-          "value": "G",
-          "available": true
-        },
-        {
-          "id": "variation-0-azul",
-          "name": "variation[0]",
-          "value": "Azul",
+          "value": "cinza",
           "available": true
         },
         {
@@ -18338,13 +18385,19 @@
           "name": "variation[0]",
           "value": "Preto",
           "available": true
+        },
+        {
+          "id": "variation-0-amarelo",
+          "name": "variation[0]",
+          "value": "Amarelo",
+          "available": true
         }
       ],
-      "description": "Compre online Kit Proteção Kronik por R$239,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Capacete para esportes radicais Jumppings Azul Bic por R$89,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_y0rxfyy0rxfyy0rx-f22da72707f308b17e17883551495905-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/capacete-azul-bic-339009ee6fa264eac517805073725070-480-0.webp",
           "alt": "Luva Pata de Vaca",
           "position": 1
         },
@@ -20190,7 +20243,7 @@
     },
     {
       "id": "meia-sox-crue-all-white",
-      "sku": "meia-soxcrue-skullpre",
+      "sku": "meia-soxcrue-amarela",
       "name": "Meia Sox Crue All White",
       "brand": "Sox Crue",
       "category": "Acessórios",
@@ -20200,11 +20253,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Meia Sox Crue Skull Preta por R$29,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Meia Sox Crue Amarela por R$29,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/a4b2d3e0-29c2-4fab-905b-d7da9aa3438a1-6eac248ba9b7dbf3fa16954935030962-480-0-8a316db21d42a2efc717431077970763-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-sox-crue-amarela-bc20119a12795bf2b917497541430485-480-0.webp",
           "alt": "Meia Sox Crue All White",
           "position": 1
         }
@@ -20285,7 +20338,7 @@
     },
     {
       "id": "meia-sox-crue-branca",
-      "sku": "meia-sox-pretelara",
+      "sku": "meia-sox-xad-pret",
       "name": "Meia Sox Crue Branca",
       "brand": "Sox Crue",
       "category": "Acessórios",
@@ -20295,11 +20348,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Meia Sox Crue Xadrez Preta com Laranja por R$29,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Meia Sox Crue Xadrez Preta por R$29,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-sox-laranja-51dfeef06f0acb0c1b17827438171306-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-sox-xadrez-57094ed930704f0c5517827438390383-480-0.webp",
           "alt": "Meia Sox Crue Branca",
           "position": 1
         },
@@ -20530,7 +20583,7 @@
     },
     {
       "id": "meia-sox-crue-roxa",
-      "sku": "meia-sox-pretelara",
+      "sku": "meia-soxcrue-amarela",
       "name": "Meia Sox Crue Roxa",
       "brand": "Sox Crue",
       "category": "Acessórios",
@@ -20540,11 +20593,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Meia Sox Crue Xadrez Preta com Laranja por R$29,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Meia Sox Crue Amarela por R$29,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-sox-laranja-51dfeef06f0acb0c1b17827438171306-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-sox-crue-amarela-bc20119a12795bf2b917497541430485-480-0.webp",
           "alt": "Meia Sox Crue Roxa",
           "position": 1
         },
@@ -20670,7 +20723,7 @@
     },
     {
       "id": "meia-sox-crue-xadrez",
-      "sku": "meia-sox-Maos",
+      "sku": "meia-sox-xad-pret",
       "name": "Meia Sox Crue Xadrez",
       "brand": "Sox Crue",
       "category": "Acessórios",
@@ -20680,11 +20733,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Meia Sox Crue Mãos por R$29,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Meia Sox Crue Xadrez Preta por R$29,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shopping-2e650d00e8721ee1fe17803198063267-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/meia-sox-xadrez-57094ed930704f0c5517827438390383-480-0.webp",
           "alt": "Meia Sox Crue Xadrez",
           "position": 1
         },
@@ -22580,21 +22633,21 @@
     },
     {
       "id": "parafuso-de-base-allen-porca-10mm-osso-by-street-dourado",
-      "sku": "parafuso-recartilhado-1",
+      "sku": "Arruelas-truck-bs",
       "name": "Parafuso de Base Allen Porca 10mm Osso By Street Dourado",
       "brand": "Black Sheep",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 29.9,
-      "priceRaw": "R$29,90",
+      "price": 19.9,
+      "priceRaw": "R$19,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Parafuso Central Black Sheep Recartilhado Longboard por R$29,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Arruelas Truck Black Sheep por R$19,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/tim-3ce0cc8dd563f9b68f17507967714348-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/arruelas-black-sheep-5c9abbb32c88d8fc8217803188899781-480-0.webp",
           "alt": "Parafuso de Base Allen Porca 10mm Osso By Street Dourado",
           "position": 1
         },
@@ -22925,21 +22978,21 @@
     },
     {
       "id": "parafusos-base-black-sheep-green-importados",
-      "sku": "parafusos--s--tp-.thunder",
+      "sku": "parafusos-pig-gold-porca.10mm",
       "name": "Parafusos Base Black Sheep Green Importados",
-      "brand": "Thunder Trucks",
+      "brand": "Pig Wheels",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 39.9,
-      "priceRaw": "R$39,90",
+      "price": 74.9,
+      "priceRaw": "R$74,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Parafusos Base Thunder 1\" por R$39,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Parafusos Base Phillips Pig Gold porca 10mm por R$74,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/parafuso-base-allen-thunder-7251a05fa6112bbd6817490501748557-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/pig_gold_phillips_1_web-9b771fa3b748b9f31817722009256658-480-0.webp",
           "alt": "Parafusos Base Black Sheep Green Importados",
           "position": 1
         },
@@ -30379,13 +30432,13 @@
     },
     {
       "id": "roda-black-sheep-fundida-53mm-102a-1g3zy",
-      "sku": "roda-powell-classic-64mm-black",
+      "sku": "pads-oss-reto-10-ver",
       "name": "Roda Black Sheep Fundida 53mm 102a",
-      "brand": "Powell Peralta",
+      "brand": "black sheep",
       "category": "Rodas",
       "department": "produtos",
-      "price": 699.9,
-      "priceRaw": "R$699,90",
+      "price": 49.9,
+      "priceRaw": "R$49,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -30393,30 +30446,6 @@
           "id": "variation-0-53mm",
           "name": "variation[0]",
           "value": "53MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-64mm",
-          "name": "variation[0]",
-          "value": "64mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-56mm",
-          "name": "variation[0]",
-          "value": "56mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-54mm",
-          "name": "variation[0]",
-          "value": "54mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-65mm",
-          "name": "variation[0]",
-          "value": "65mm",
           "available": true
         },
         {
@@ -30468,9 +30497,9 @@
           "available": true
         },
         {
-          "id": "variation-0-60mm",
+          "id": "variation-0-65mm",
           "name": "variation[0]",
-          "value": "60mm",
+          "value": "65mm",
           "available": true
         },
         {
@@ -30478,13 +30507,37 @@
           "name": "variation[0]",
           "value": "52mm",
           "available": true
+        },
+        {
+          "id": "variation-0-56mm",
+          "name": "variation[0]",
+          "value": "56mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-54mm",
+          "name": "variation[0]",
+          "value": "54mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-70mm",
+          "name": "variation[0]",
+          "value": "70mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-74mm",
+          "name": "variation[0]",
+          "value": "74mm",
+          "available": true
         }
       ],
-      "description": "Compre online Roda Powell Peralta G-Bones 64mm 97a - Black por R$699,90. Faça seu pedido e pague-o online.",
+      "description": "Descubra a Roda Iniciante Black Sheep 51mm, ideal para skatistas. Com dureza 90A e material PU, oferece controle e durabilidade. Compre agora!",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_uy4nlkuy4nlkuy4n-919f6faf143716607e17655026498499-1024-1024-0627644b9be93b5d9a17926825222527-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/captura-de-tela-2024-03-25-a-s-16-00-52-xg6rsx74id-bb9ee75dbe34a8be5a17430098077432-480-0.webp",
           "alt": "Roda Black Sheep Fundida 53mm 102a",
           "position": 1
         },
@@ -31585,13 +31638,13 @@
     },
     {
       "id": "roda-emex-53mm-blue-conica-55d-chsg2",
-      "sku": "roda-long-mentex-74mm",
+      "sku": "roda-milk-Skull-52mm",
       "name": "Roda Emex 53mm Blue Cônica 55D",
-      "brand": "Mentex",
+      "brand": "milk Skateboards",
       "category": "Rodas",
       "department": "produtos",
-      "price": 199.9,
-      "priceRaw": "R$199,90",
+      "price": 134.9,
+      "priceRaw": "R$134,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -31602,15 +31655,9 @@
           "available": true
         },
         {
-          "id": "variation-0-74mm",
+          "id": "variation-0-52mm",
           "name": "variation[0]",
-          "value": "74mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-70mm",
-          "name": "variation[0]",
-          "value": "70mm",
+          "value": "52mm",
           "available": true
         },
         {
@@ -31620,9 +31667,9 @@
           "available": true
         },
         {
-          "id": "variation-0-65mm",
+          "id": "variation-0-56mm",
           "name": "variation[0]",
-          "value": "65mm",
+          "value": "56mm",
           "available": true
         },
         {
@@ -31632,9 +31679,15 @@
           "available": true
         },
         {
-          "id": "variation-0-60mm",
+          "id": "variation-0-70mm",
           "name": "variation[0]",
-          "value": "60mm",
+          "value": "70mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-65mm",
+          "name": "variation[0]",
+          "value": "65mm",
           "available": true
         },
         {
@@ -31642,61 +31695,13 @@
           "name": "variation[0]",
           "value": "54mm",
           "available": true
-        },
-        {
-          "id": "variation-0-amarelo",
-          "name": "variation[0]",
-          "value": "Amarelo",
-          "available": true
-        },
-        {
-          "id": "variation-0-azul",
-          "name": "variation[0]",
-          "value": "Azul",
-          "available": true
-        },
-        {
-          "id": "variation-0-rosa",
-          "name": "variation[0]",
-          "value": "Rosa",
-          "available": true
-        },
-        {
-          "id": "variation-0-roxo",
-          "name": "variation[0]",
-          "value": "Roxo",
-          "available": true
-        },
-        {
-          "id": "variation-0-verde",
-          "name": "variation[0]",
-          "value": "Verde",
-          "available": true
-        },
-        {
-          "id": "variation-0-preto",
-          "name": "variation[0]",
-          "value": "Preto",
-          "available": true
-        },
-        {
-          "id": "variation-0-laranja",
-          "name": "variation[0]",
-          "value": "Laranja",
-          "available": true
-        },
-        {
-          "id": "variation-1-53mm",
-          "name": "variation[1]",
-          "value": "53MM",
-          "available": true
         }
       ],
-      "description": "Compre online Roda Mentex Longboard Importada 74mm por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Roda Milk Skull 52mm Cônica por R$134,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0897-a5dd7366011b49cf0917199327301092-1024-1024-6377e2aa986f8163d417915581869899-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/d_nq_np_2x_801889-mlb120443000967_102026-f-roda-skate-milk-52mm-101a-importada-porcas-de-rodas-df7c616bcca127c37e17939050458556-480-0.webp",
           "alt": "Roda Emex 53mm Blue Cônica 55D",
           "position": 1
         },
@@ -34946,13 +34951,13 @@
     },
     {
       "id": "roda-mentex-longboard-importada-74mm-1ocy1",
-      "sku": "roda-cruiser-hondar-60mm-verde",
+      "sku": "roda-long-mentex-65mm",
       "name": "Roda Mentex Longboard Importada 74mm",
-      "brand": "Hondar",
+      "brand": "Mentex",
       "category": "Rodas",
       "department": "produtos",
-      "price": 109.9,
-      "priceRaw": "R$109,90",
+      "price": 199.9,
+      "priceRaw": "R$199,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -34960,30 +34965,6 @@
           "id": "variation-0-74mm",
           "name": "variation[0]",
           "value": "74mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-60mm",
-          "name": "variation[0]",
-          "value": "60mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-56mm",
-          "name": "variation[0]",
-          "value": "56mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-58mm",
-          "name": "variation[0]",
-          "value": "58MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-52mm",
-          "name": "variation[0]",
-          "value": "52mm",
           "available": true
         },
         {
@@ -34999,65 +34980,41 @@
           "available": true
         },
         {
+          "id": "variation-0-64mm",
+          "name": "variation[0]",
+          "value": "64mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-52mm",
+          "name": "variation[0]",
+          "value": "52mm",
+          "available": true
+        },
+        {
           "id": "variation-0-54mm",
           "name": "variation[0]",
           "value": "54mm",
           "available": true
         },
         {
-          "id": "variation-0-amarelo",
+          "id": "variation-0-60mm",
           "name": "variation[0]",
-          "value": "Amarelo",
+          "value": "60mm",
           "available": true
         },
         {
-          "id": "variation-0-azul",
+          "id": "variation-0-58mm",
           "name": "variation[0]",
-          "value": "Azul",
-          "available": true
-        },
-        {
-          "id": "variation-0-rosa",
-          "name": "variation[0]",
-          "value": "Rosa",
-          "available": true
-        },
-        {
-          "id": "variation-0-roxo",
-          "name": "variation[0]",
-          "value": "Roxo",
-          "available": true
-        },
-        {
-          "id": "variation-0-verde",
-          "name": "variation[0]",
-          "value": "Verde",
-          "available": true
-        },
-        {
-          "id": "variation-0-preto",
-          "name": "variation[0]",
-          "value": "Preto",
-          "available": true
-        },
-        {
-          "id": "variation-0-laranja",
-          "name": "variation[0]",
-          "value": "Laranja",
-          "available": true
-        },
-        {
-          "id": "variation-1-53mm",
-          "name": "variation[1]",
-          "value": "53MM",
+          "value": "58MM",
           "available": true
         }
       ],
-      "description": "Compre online Roda Hondar Longboards 60mm 78A Green por R$109,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Roda Mentex Longboard Importada 65mm por R$199,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_ktdvsaktdvsaktdv-69f99c52516cf56bfc17945942569524-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0866-43c67835c0a59d5c1917199300048907-1024-1024-a35fa8b2d46b1093fa17915580425250-480-0.webp",
           "alt": "Roda Mentex Longboard Importada 74mm",
           "position": 1
         },
@@ -35711,7 +35668,7 @@
     },
     {
       "id": "roda-milk-skull-58mm-conica-s0iv6",
-      "sku": "roda-long-mentex-65mm",
+      "sku": "roda-long-mentex-70mm",
       "name": "Roda Milk Skull 58mm Conica",
       "brand": "Mentex",
       "category": "Rodas",
@@ -35728,21 +35685,15 @@
           "available": true
         },
         {
-          "id": "variation-0-65mm",
+          "id": "variation-0-70mm",
           "name": "variation[0]",
-          "value": "65mm",
+          "value": "70mm",
           "available": true
         },
         {
-          "id": "variation-0-52mm",
+          "id": "variation-0-60mm",
           "name": "variation[0]",
-          "value": "52mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-64mm",
-          "name": "variation[0]",
-          "value": "64mm",
+          "value": "60mm",
           "available": true
         },
         {
@@ -35752,29 +35703,23 @@
           "available": true
         },
         {
+          "id": "variation-0-65mm",
+          "name": "variation[0]",
+          "value": "65mm",
+          "available": true
+        },
+        {
           "id": "variation-0-74mm",
           "name": "variation[0]",
           "value": "74mm",
           "available": true
-        },
-        {
-          "id": "variation-0-56mm",
-          "name": "variation[0]",
-          "value": "56mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-70mm",
-          "name": "variation[0]",
-          "value": "70mm",
-          "available": true
         }
       ],
-      "description": "Compre online Roda Mentex Longboard Importada 65mm por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Roda Mentex Longboard Importada 70mm por R$199,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0866-43c67835c0a59d5c1917199300048907-1024-1024-a35fa8b2d46b1093fa17915580425250-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0861-1822f698efc32af10817199309667870-1024-1024-45fedd8d54626c0e4b17915555413574-480-0.webp",
           "alt": "Roda Milk Skull 58mm Conica",
           "position": 1
         },
@@ -37173,13 +37118,13 @@
     },
     {
       "id": "roda-moska-62mm-55d-solar-xutxe",
-      "sku": "roda-milk-star-54mm",
+      "sku": "roda-official-56mm",
       "name": "Roda Moska Light Speed 62mm 55D",
-      "brand": "milk Skateboards",
+      "brand": "Official",
       "category": "Rodas",
       "department": "produtos",
-      "price": 134.9,
-      "priceRaw": "R$134,90",
+      "price": 159.9,
+      "priceRaw": "R$159,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -37187,12 +37132,6 @@
           "id": "variation-0-62mm",
           "name": "variation[0]",
           "value": "62MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-54mm",
-          "name": "variation[0]",
-          "value": "54mm",
           "available": true
         },
         {
@@ -37208,9 +37147,15 @@
           "available": true
         },
         {
-          "id": "variation-0-52mm",
+          "id": "variation-0-54mm",
           "name": "variation[0]",
-          "value": "52mm",
+          "value": "54mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-64mm",
+          "name": "variation[0]",
+          "value": "64mm",
           "available": true
         },
         {
@@ -37274,11 +37219,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Roda Milk Star 54mm Cônica 101a por R$134,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Roda Official Conical Full 56mm por R$159,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_hcdh67hcdh67hcdh-f2cf3f0e538f31759b17927609456733-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_ovsvaaovsvaaovsv-1ec98e6023a0b54e2017915524316878-480-0.webp",
           "alt": "Roda Moska Light Speed 62mm 55D",
           "position": 1
         },
@@ -39123,22 +39068,16 @@
     },
     {
       "id": "roda-patins-inline-hondar-64mm",
-      "sku": "kit-prot-hd-rosa-m",
+      "sku": "skate-com-hondar-iniciante-m&ms",
       "name": "Roda Patins Inline Hondar 64mm",
       "brand": "Hondar",
       "category": "Rodas",
       "department": "produtos",
-      "price": 129.9,
-      "priceRaw": "R$129,90",
+      "price": 229.9,
+      "priceRaw": "R$229,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
-        {
-          "id": "variation-0-m",
-          "name": "variation[0]",
-          "value": "M",
-          "available": true
-        },
         {
           "id": "variation-0-laranja",
           "name": "variation[0]",
@@ -39158,17 +39097,23 @@
           "available": true
         },
         {
+          "id": "variation-0-m",
+          "name": "variation[0]",
+          "value": "M",
+          "available": true
+        },
+        {
           "id": "variation-0-g",
           "name": "variation[0]",
           "value": "G",
           "available": true
         }
       ],
-      "description": "Compre online Kit Proteção Infantil HD Rosa por R$129,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Infantil Completo HSC Hondar M&Ms por R$229,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/kit-de-protecao-hd-inline-rosa-85498-927fbc7090c42a370817567328765000-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_xprgqfxprgqfxprg-e2255283814cc57ee517945111481393-480-0.webp",
           "alt": "Roda Patins Inline Hondar 64mm",
           "position": 1
         },
@@ -39932,6 +39877,18 @@
           "available": true
         },
         {
+          "id": "variation-0-56mm",
+          "name": "variation[0]",
+          "value": "56mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-70mm",
+          "name": "variation[0]",
+          "value": "70mm",
+          "available": true
+        },
+        {
           "id": "variation-0-54mm",
           "name": "variation[0]",
           "value": "54mm",
@@ -39944,69 +39901,9 @@
           "available": true
         },
         {
-          "id": "variation-0-amarelo",
+          "id": "variation-0-74mm",
           "name": "variation[0]",
-          "value": "Amarelo",
-          "available": true
-        },
-        {
-          "id": "variation-0-azul",
-          "name": "variation[0]",
-          "value": "Azul",
-          "available": true
-        },
-        {
-          "id": "variation-0-rosa",
-          "name": "variation[0]",
-          "value": "Rosa",
-          "available": true
-        },
-        {
-          "id": "variation-0-roxo",
-          "name": "variation[0]",
-          "value": "Roxo",
-          "available": true
-        },
-        {
-          "id": "variation-0-verde",
-          "name": "variation[0]",
-          "value": "Verde",
-          "available": true
-        },
-        {
-          "id": "variation-0-preto",
-          "name": "variation[0]",
-          "value": "Preto",
-          "available": true
-        },
-        {
-          "id": "variation-0-laranja",
-          "name": "variation[0]",
-          "value": "Laranja",
-          "available": true
-        },
-        {
-          "id": "variation-1-53mm",
-          "name": "variation[1]",
-          "value": "53MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-70mm",
-          "name": "variation[0]",
-          "value": "70mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-60mm",
-          "name": "variation[0]",
-          "value": "60mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-56mm",
-          "name": "variation[0]",
-          "value": "56mm",
+          "value": "74mm",
           "available": true
         }
       ],
@@ -42427,9 +42324,9 @@
     },
     {
       "id": "rolamento-chaze-purple",
-      "sku": "rolamento-Fireball-4uwcy.fireball",
+      "sku": "rolament-sheep-whitegold",
       "name": "Rolamento Chaze Purple",
-      "brand": "Fireball",
+      "brand": "Black Sheep",
       "category": "Rolamentos",
       "department": "produtos",
       "price": 99.9,
@@ -42437,11 +42334,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Rolamento Importado Fireball por R$99,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Rolamento Black Sheep White Gold Importado por R$99,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/rolamento-fireball-3508df50e0e393005817736861321763-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_4604-beb649c399f064836c17819647083574-1024-1024-abe6f53be3aedb3f3917839478776448-480-0.webp",
           "alt": "Rolamento Chaze Purple",
           "position": 1
         },
@@ -44654,13 +44551,13 @@
     },
     {
       "id": "shape-liso-maple-8-0-1ma46",
-      "sku": "shp-maple-sk8roots-8,50",
+      "sku": "shape-milk-old-bottle",
       "name": "Shape Liso Maple 8.0",
-      "brand": "Sk8Roots",
+      "brand": "Milk skateboards",
       "category": "Shape Maple",
       "department": "produtos",
-      "price": 229.9,
-      "priceRaw": "R$229,90",
+      "price": 299.9,
+      "priceRaw": "R$299,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -44677,9 +44574,9 @@
           "available": true
         },
         {
-          "id": "variation-0-7-50",
+          "id": "variation-0-8-10",
           "name": "variation[0]",
-          "value": "7.50",
+          "value": "8.10",
           "available": true
         },
         {
@@ -44689,17 +44586,17 @@
           "available": true
         },
         {
-          "id": "variation-0-8-10",
+          "id": "variation-0-7-50",
           "name": "variation[0]",
-          "value": "8.10",
+          "value": "7.50",
           "available": true
         }
       ],
-      "description": "Compre online Shape Maple Sk8roots 8.50 por R$229,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Milk Old School Bottle por R$299,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_kubxyikubxyikubx-1-af3404141df25fd93d17930358762401-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_f420uif420uif420-89ba88b4eedcc8500017926934394366-480-0.webp",
           "alt": "Shape Liso Maple 8.0",
           "position": 1
         },
@@ -44924,7 +44821,7 @@
     },
     {
       "id": "shape-liso-marfim",
-      "sku": "shape-mar-flo-gump-8.0",
+      "sku": "shape-mar-fl-Dennes-8.1",
       "name": "Shape Liso Marfim",
       "brand": "Florest Skateboard",
       "category": "Shape Marfim / Fiber",
@@ -44959,23 +44856,17 @@
           "available": true
         },
         {
-          "id": "variation-0-8-125",
-          "name": "variation[0]",
-          "value": "8.125",
-          "available": true
-        },
-        {
           "id": "variation-0-8-10",
           "name": "variation[0]",
           "value": "8.10",
           "available": true
         }
       ],
-      "description": "Compre online Shape Marfim Florest Dennes Ferreira 8.0 por R$119,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Marfim Florest Dennes Ferreira 8.1 por R$119,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_mk7l1kmk7l1kmk7l-90a80d2658eaa562eb17920042563835-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-florest-dennes-ferreira-vinho-1f5ae965ca5b12097817926940904940-480-0.webp",
           "alt": "Shape Liso Marfim",
           "position": 1
         },
@@ -45999,13 +45890,13 @@
     },
     {
       "id": "shape-maple-face-true-cowboy-8-50-1d0zj",
-      "sku": "shape-map-fli-davidgonzalez",
+      "sku": "shp-kost-frog-8,25",
       "name": "Shape Maple Face True Cowboy 8.50",
-      "brand": "Flip",
+      "brand": "Kost",
       "category": "Shape Maple",
       "department": "produtos",
-      "price": 339.9,
-      "priceRaw": "R$339,90",
+      "price": 229.9,
+      "priceRaw": "R$229,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -46016,9 +45907,9 @@
           "available": true
         },
         {
-          "id": "variation-0-8-10",
+          "id": "variation-0-8-25",
           "name": "variation[0]",
-          "value": "8.10",
+          "value": "8.25",
           "available": true
         },
         {
@@ -46028,23 +45919,23 @@
           "available": true
         },
         {
+          "id": "variation-0-8-10",
+          "name": "variation[0]",
+          "value": "8.10",
+          "available": true
+        },
+        {
           "id": "variation-0-9-0",
           "name": "variation[0]",
           "value": "9.0",
           "available": true
-        },
-        {
-          "id": "variation-0-8-25",
-          "name": "variation[0]",
-          "value": "8.25",
-          "available": true
         }
       ],
-      "description": "Compre online Shape Maple Flip David Gonzalez 8.1 por R$339,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Maple Kost Frog 8.25 por R$229,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20260730_174756-11fb61761bb2d4c34017854458192325-1024-1024-a5b160f347a8db279317926887765935-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-kost-vermelho-86ad12fd97131c5f5417927821723085-480-0.webp",
           "alt": "Shape Maple Face True Cowboy 8.50",
           "position": 1
         },
@@ -46976,15 +46867,21 @@
           "available": true
         },
         {
-          "id": "variation-0-8-5",
-          "name": "variation[0]",
-          "value": "8.5",
-          "available": true
-        },
-        {
           "id": "variation-0-8-10",
           "name": "variation[0]",
           "value": "8.10",
+          "available": true
+        },
+        {
+          "id": "variation-0-9-0",
+          "name": "variation[0]",
+          "value": "9.0",
+          "available": true
+        },
+        {
+          "id": "variation-0-8-5",
+          "name": "variation[0]",
+          "value": "8.5",
           "available": true
         }
       ],
@@ -47100,7 +46997,7 @@
     },
     {
       "id": "shape-maple-lyons-fusca-samuel-pires-8-1-z7prz",
-      "sku": "shp-maple-sk8roots-8,50",
+      "sku": "shp-maple-sk8roots-7,50",
       "name": "Shape Maple Lyons Fusca Samuel Pires 8.25",
       "brand": "Sk8Roots",
       "category": "Shape Maple",
@@ -47117,15 +47014,15 @@
           "available": true
         },
         {
-          "id": "variation-0-8-5",
+          "id": "variation-0-7-50",
           "name": "variation[0]",
-          "value": "8.5",
+          "value": "7.50",
           "available": true
         },
         {
-          "id": "variation-0-8-10",
+          "id": "variation-0-8-5",
           "name": "variation[0]",
-          "value": "8.10",
+          "value": "8.5",
           "available": true
         },
         {
@@ -47135,17 +47032,17 @@
           "available": true
         },
         {
-          "id": "variation-0-7-50",
+          "id": "variation-0-8-10",
           "name": "variation[0]",
-          "value": "7.50",
+          "value": "8.10",
           "available": true
         }
       ],
-      "description": "Compre online Shape Maple Sk8roots 8.50 por R$229,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Maple Sk8roots 7.50 por R$229,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_kubxyikubxyikubx-1-af3404141df25fd93d17930358762401-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_kubxyikubxyikubx-1-ac9fa4e70c48787be317930374839666-480-0.webp",
           "alt": "Shape Maple Lyons Fusca Samuel Pires 8.25",
           "position": 1
         },
@@ -48306,9 +48203,9 @@
     },
     {
       "id": "shape-maple-original-g-santa-bege-8-50-1i6dx",
-      "sku": "shp-same-car-8,25",
+      "sku": "shp-maple-sk8roots-8,50",
       "name": "Shape Maple Original G Santa Bege 8.50",
-      "brand": "Same Skateboards",
+      "brand": "Sk8Roots",
       "category": "Shape Maple",
       "department": "produtos",
       "price": 229.9,
@@ -48339,19 +48236,13 @@
           "name": "variation[0]",
           "value": "8.10",
           "available": true
-        },
-        {
-          "id": "variation-0-9-0",
-          "name": "variation[0]",
-          "value": "9.0",
-          "available": true
         }
       ],
-      "description": "Compre online Shape Maple Same Car 8.25 por R$229,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Maple Sk8roots 8.50 por R$229,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_pdtnnbpdtnnbpdtn-907efcf36b7433fe0e17927769672114-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_kubxyikubxyikubx-1-af3404141df25fd93d17930358762401-480-0.webp",
           "alt": "Shape Maple Original G Santa Bege 8.50",
           "position": 1
         },
@@ -48372,9 +48263,9 @@
     },
     {
       "id": "shape-maple-plan-b-lil-buddies-aurelien-giraud-1acz0",
-      "sku": "shp-same-car-8,25",
+      "sku": "shp-kost-goat-7,5",
       "name": "Shape Maple Plan B Lil' Buddies Aurelien Giraud 7.75",
-      "brand": "Same Skateboards",
+      "brand": "Kost",
       "category": "Shape Maple",
       "department": "produtos",
       "price": 229.9,
@@ -48389,9 +48280,15 @@
           "available": true
         },
         {
-          "id": "variation-0-8-25",
+          "id": "variation-0-7-50",
           "name": "variation[0]",
-          "value": "8.25",
+          "value": "7.50",
+          "available": true
+        },
+        {
+          "id": "variation-0-8-10",
+          "name": "variation[0]",
+          "value": "8.10",
           "available": true
         },
         {
@@ -48401,29 +48298,17 @@
           "available": true
         },
         {
-          "id": "variation-0-7-50",
-          "name": "variation[0]",
-          "value": "7.50",
-          "available": true
-        },
-        {
           "id": "variation-0-9-0",
           "name": "variation[0]",
           "value": "9.0",
           "available": true
-        },
-        {
-          "id": "variation-0-8-10",
-          "name": "variation[0]",
-          "value": "8.10",
-          "available": true
         }
       ],
-      "description": "Compre online Shape Maple Same Car 8.25 por R$229,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Maple Kost Goat 7.50 por R$229,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_pdtnnbpdtnnbpdtn-907efcf36b7433fe0e17927769672114-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-kost-amarelo-b5bd1cfc239067149217927818320324-480-0.webp",
           "alt": "Shape Maple Plan B Lil' Buddies Aurelien Giraud 7.75",
           "position": 1
         },
@@ -49431,13 +49316,13 @@
     },
     {
       "id": "shape-marfim-boardline-8-25-19rkq",
-      "sku": "shape-mar-flo-gump-8.0",
+      "sku": "shp-solo-universe-8.0",
       "name": "Shape Marfim Boardline 8.25",
-      "brand": "Florest Skateboard",
+      "brand": "Solo Decks",
       "category": "Shape Marfim / Fiber",
       "department": "produtos",
-      "price": 119.9,
-      "priceRaw": "R$119,90",
+      "price": 139.9,
+      "priceRaw": "R$139,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -49454,29 +49339,23 @@
           "available": true
         },
         {
-          "id": "variation-0-8-10",
-          "name": "variation[0]",
-          "value": "8.10",
-          "available": true
-        },
-        {
-          "id": "variation-0-8-125",
-          "name": "variation[0]",
-          "value": "8.125",
-          "available": true
-        },
-        {
           "id": "variation-0-7-75",
           "name": "variation[0]",
           "value": "7.75",
           "available": true
+        },
+        {
+          "id": "variation-0-8-10",
+          "name": "variation[0]",
+          "value": "8.10",
+          "available": true
         }
       ],
-      "description": "Compre online Shape Marfim Florest Dennes Ferreira 8.0 por R$119,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Marfim Solo Decks Universe 8.0 por R$139,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_mk7l1kmk7l1kmk7l-90a80d2658eaa562eb17920042563835-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_v4h7rfv4h7rfv4h7-3d5d0e594d53c870ff17927762934050-480-0.webp",
           "alt": "Shape Marfim Boardline 8.25",
           "position": 1
         },
@@ -51378,13 +51257,13 @@
     },
     {
       "id": "shape-marfim-miss-black-gato-8-0-svvz4",
-      "sku": "shape-mar-com-fibergl-tanque-8.125",
+      "sku": "shape-mar-flo-chaos-8.0",
       "name": "Shape Marfim Miss Black Gato 8.0",
-      "brand": "Wood Light",
+      "brand": "Florest Skateboard",
       "category": "Shape Marfim / Fiber",
       "department": "produtos",
-      "price": 169.9,
-      "priceRaw": "R$169,90",
+      "price": 119.9,
+      "priceRaw": "R$119,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -51405,19 +51284,13 @@
           "name": "variation[0]",
           "value": "8.10",
           "available": true
-        },
-        {
-          "id": "variation-0-7-75",
-          "name": "variation[0]",
-          "value": "7.75",
-          "available": true
         }
       ],
-      "description": "Compre online Shape Marfim Com Fiberglass Wood Light Ladeira Tanque 8.125 por R$169,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Marfim Florest Chaos 8.0 por R$119,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-marfim-ladeira-tanque-wood-light-street-1d5e3f06a2d75021c017721105017876-1024-1024-b1048ec5e4a969508b17930210837407-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_7tkldl7tkldl7tkl-be5681749819f0a64017920043630328-480-0.webp",
           "alt": "Shape Marfim Miss Black Gato 8.0",
           "position": 1
         },
@@ -51552,7 +51425,7 @@
     },
     {
       "id": "shape-marfim-perfect-line-alien-jet-775-1bb9g",
-      "sku": "shape-mar-flo-chaos-8.0",
+      "sku": "shape-mar-fl-Dennes-8.1",
       "name": "Shape Marfim Perfect Line Alien Jet 7,75",
       "brand": "Florest Skateboard",
       "category": "Shape Marfim / Fiber",
@@ -51569,9 +51442,9 @@
           "available": true
         },
         {
-          "id": "variation-0-8-0",
+          "id": "variation-0-8-10",
           "name": "variation[0]",
-          "value": "8.0",
+          "value": "8.10",
           "available": true
         },
         {
@@ -51579,13 +51452,19 @@
           "name": "variation[0]",
           "value": "8.125",
           "available": true
+        },
+        {
+          "id": "variation-0-8-0",
+          "name": "variation[0]",
+          "value": "8.0",
+          "available": true
         }
       ],
-      "description": "Compre online Shape Marfim Florest Chaos 8.0 por R$119,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Shape Marfim Florest Dennes Ferreira 8.1 por R$119,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_7tkldl7tkldl7tkl-be5681749819f0a64017920043630328-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-florest-dennes-ferreira-vinho-1f5ae965ca5b12097817926940904940-480-0.webp",
           "alt": "Shape Marfim Perfect Line Alien Jet 7,75",
           "position": 1
         },
@@ -52002,6 +51881,12 @@
           "available": true
         },
         {
+          "id": "variation-0-8-10",
+          "name": "variation[0]",
+          "value": "8.10",
+          "available": true
+        },
+        {
           "id": "variation-0-7-75",
           "name": "variation[0]",
           "value": "7.75",
@@ -52011,12 +51896,6 @@
           "id": "variation-0-8-125",
           "name": "variation[0]",
           "value": "8.125",
-          "available": true
-        },
-        {
-          "id": "variation-0-8-10",
-          "name": "variation[0]",
-          "value": "8.10",
           "available": true
         }
       ],
@@ -52647,21 +52526,21 @@
     },
     {
       "id": "skate-completo-black-sheep-pro-wj7ec",
-      "sku": "skate-in-girl-1",
+      "sku": "skate-com-primi-skull-8.0",
       "name": "Skate Completo Black Sheep Pro",
-      "brand": "Mais Skate",
+      "brand": "Primitive Skateboards",
       "category": "Skate Completo",
       "department": "produtos",
-      "price": 239.9,
-      "priceRaw": "R$239,90",
+      "price": 449.9,
+      "priceRaw": "R$449,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Skate Completo Semi Profissional Girl por R$239,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Completo Primitive Paul Rodriguez Skull 8.0 por R$449,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_mfdge8mfdge8mfdg-2c640482c2f58af33717931221458025-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_rbuayirbuayirbua-fbb624ceb747e1439617914803382642-480-0.webp",
           "alt": "Skate Completo Black Sheep Pro",
           "position": 1
         },
@@ -52937,21 +52816,21 @@
     },
     {
       "id": "skate-completo-primitive-x-dragon-ball-z-vegeta-tiago-lemos-10pnx",
-      "sku": "skate-com-hondar-iniciante-m&ms",
+      "sku": "skate-in-girl-1",
       "name": "Skate Completo Primitive X Dragon Ball Z Vegeta Tiago Lemos 8.12",
-      "brand": "Hondar",
+      "brand": "Mais Skate",
       "category": "Skate Completo",
       "department": "produtos",
-      "price": 229.9,
-      "priceRaw": "R$229,90",
+      "price": 239.9,
+      "priceRaw": "R$239,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Skate Infantil Completo HSC Hondar M&Ms por R$229,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Completo Semi Profissional Girl por R$239,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_xprgqfxprgqfxprg-e2255283814cc57ee517945111481393-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_mfdge8mfdge8mfdg-2c640482c2f58af33717931221458025-480-0.webp",
           "alt": "Skate Completo Primitive X Dragon Ball Z Vegeta Tiago Lemos 8.12",
           "position": 1
         },
@@ -53047,21 +52926,21 @@
     },
     {
       "id": "skate-completo-semi-profissional-black-sheep-hulk-z98vj",
-      "sku": "skate-ini-completo-wood-oldsurf",
+      "sku": "skate-com-hondar-iniciante-m&ms",
       "name": "Skate Completo Semi Profissional Black Sheep Hulk",
-      "brand": "Wood Light",
+      "brand": "Hondar",
       "category": "Skate Completo",
       "department": "produtos",
-      "price": 259.9,
-      "priceRaw": "R$259,90",
+      "price": 229.9,
+      "priceRaw": "R$229,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Skate Completo Semi Profissional Wood Light Old Surf por R$259,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Infantil Completo HSC Hondar M&Ms por R$229,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_45e1sc45e1sc45e1-2770a8ce429b4c1d2b17870742539592-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_xprgqfxprgqfxprg-e2255283814cc57ee517945111481393-480-0.webp",
           "alt": "Skate Completo Semi Profissional Black Sheep Hulk",
           "position": 1
         },
@@ -53292,9 +53171,9 @@
     },
     {
       "id": "skate-completo-semi-profissional-girl-1a5n0",
-      "sku": "skate-com-b-she-hulk",
+      "sku": "skate-ini-completo-wood-primatafavela",
       "name": "Skate Completo Semi Profissional Girl",
-      "brand": "Black Sheep",
+      "brand": "Wood Light",
       "category": "Skate Completo",
       "department": "produtos",
       "price": 259.9,
@@ -53302,11 +53181,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Skate Completo Semi Profissional Black Sheep Hulk por R$259,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Completo Semi Profissional Wood Light Primata Favela por R$259,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_52zf4l52zf4l52zf-af1883f4d4641da92717870761767369-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_gnvsdhgnvsdhgnvs-0186847b4516152ddb17870736113830-480-0.webp",
           "alt": "Skate Completo Semi Profissional Girl",
           "position": 1
         },
@@ -53327,9 +53206,9 @@
     },
     {
       "id": "skate-completo-semi-profissional-goku-1ba9z",
-      "sku": "skate-ini-completo-wood-oldsurf",
+      "sku": "skate-com-b-she-hulk",
       "name": "Skate Completo Semi Profissional Goku",
-      "brand": "Wood Light",
+      "brand": "Black Sheep",
       "category": "Skate Completo",
       "department": "produtos",
       "price": 259.9,
@@ -53337,11 +53216,11 @@
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [],
-      "description": "Compre online Skate Completo Semi Profissional Wood Light Old Surf por R$259,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Skate Completo Semi Profissional Black Sheep Hulk por R$259,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_45e1sc45e1sc45e1-2770a8ce429b4c1d2b17870742539592-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_52zf4l52zf4l52zf-af1883f4d4641da92717870761767369-480-0.webp",
           "alt": "Skate Completo Semi Profissional Goku",
           "position": 1
         },
@@ -54367,9 +54246,9 @@
     },
     {
       "id": "skate-longboard-completo-fam-cut-out-pantera-38",
-      "sku": "shp-long-lyons-leao",
+      "sku": "roda-long-mentex-65mm",
       "name": "Skate Longboard Completo FAM Cut Out Pantera 38''",
-      "brand": "Lyons skateboards",
+      "brand": "Mentex",
       "category": "Longboard",
       "department": "produtos",
       "price": 199.9,
@@ -54384,9 +54263,9 @@
           "available": true
         },
         {
-          "id": "variation-0-70mm",
+          "id": "variation-0-74mm",
           "name": "variation[0]",
-          "value": "70MM",
+          "value": "74mm",
           "available": true
         },
         {
@@ -54396,23 +54275,29 @@
           "available": true
         },
         {
-          "id": "variation-0-74mm",
-          "name": "variation[0]",
-          "value": "74mm",
-          "available": true
-        },
-        {
           "id": "variation-0-180mm",
           "name": "variation[0]",
           "value": "180MM",
           "available": true
+        },
+        {
+          "id": "variation-0-70mm",
+          "name": "variation[0]",
+          "value": "70MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-60mm",
+          "name": "variation[0]",
+          "value": "60mm",
+          "available": true
         }
       ],
-      "description": "Compre online Shape Longboard Lyons Leão Com Lixa por R$199,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Roda Mentex Longboard Importada 65mm por R$199,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/shape-long-lyons-leao-dd0fe949bb7cafe1d817816404418376-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0866-43c67835c0a59d5c1917199300048907-1024-1024-a35fa8b2d46b1093fa17915580425250-480-0.webp",
           "alt": "Skate Longboard Completo FAM Cut Out Pantera 38''",
           "position": 1
         },
@@ -54987,7 +54872,7 @@
     },
     {
       "id": "tenis-tesla-coil-black-reflect",
-      "sku": "tenis-tes-ved-gray-41",
+      "sku": "tenis-tes-coi-bruno-silva-40",
       "name": "Tênis Tesla Coil Black Reflect",
       "brand": "Tesla",
       "category": "Acessórios",
@@ -55010,11 +54895,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Vedanta Grey por R$399,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Coil Pro Black Reflect por R$399,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/tenis_tesla_vedanta_grey_497_1_94aea5773fa988bbf073d94d746ec5f5-fa58f95781b232317017749802152243-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/dsc00790jpg_1600x1600fill_ffffff-1f38b9804c220db03617749785144512-480-0.webp",
           "alt": "Tênis Tesla Coil Black Reflect",
           "position": 1
         },
@@ -55065,7 +54950,7 @@
     },
     {
       "id": "tenis-tesla-coil-black-reflect-mesclado",
-      "sku": "tenis-tes-nin-white-41",
+      "sku": "tenis-tes-ved-gray-41",
       "name": "Tênis Tesla Coil Black Reflect Mesclado",
       "brand": "Tesla",
       "category": "Acessórios",
@@ -55088,11 +54973,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Nine All White por R$399,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Vedanta Grey por R$399,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/001-tesla_1600x1600fill_ffffff-2b51e533ea38c6c5b017749781688843-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/tenis_tesla_vedanta_grey_497_1_94aea5773fa988bbf073d94d746ec5f5-fa58f95781b232317017749802152243-480-0.webp",
           "alt": "Tênis Tesla Coil Black Reflect Mesclado",
           "position": 1
         },
@@ -55372,13 +55257,13 @@
     },
     {
       "id": "tenis-tesla-fusion-all-black-eo7vc",
-      "sku": "tenis-tes-nin-white-41",
+      "sku": "tenis-tes-her-whita-41",
       "name": "Tênis Tesla Fusion All Black",
       "brand": "Tesla",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 399.9,
-      "priceRaw": "R$399,90",
+      "price": 359.9,
+      "priceRaw": "R$359,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -55395,11 +55280,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Nine All White por R$399,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Hertz White Art por R$359,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/001-tesla_1600x1600fill_ffffff-2b51e533ea38c6c5b017749781688843-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/591-tesla-1_1600x1600fill_ffffff-98c71083925f849b6717537146471448-480-0.webp",
           "alt": "Tênis Tesla Fusion All Black",
           "position": 1
         },
@@ -55528,7 +55413,7 @@
     },
     {
       "id": "tenis-tesla-fusion-send-sdwi5",
-      "sku": "tenis-tes-coi-bruno-silva-40",
+      "sku": "tenis-tes-nin-white-41",
       "name": "Tênis Tesla Fusion Send",
       "brand": "Tesla",
       "category": "Acessórios",
@@ -55551,11 +55436,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Coil Pro Black Reflect por R$399,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Nine All White por R$399,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/dsc00790jpg_1600x1600fill_ffffff-1f38b9804c220db03617749785144512-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/001-tesla_1600x1600fill_ffffff-2b51e533ea38c6c5b017749781688843-480-0.webp",
           "alt": "Tênis Tesla Fusion Send",
           "position": 1
         },
@@ -56074,13 +55959,13 @@
     },
     {
       "id": "tenis-tesla-nine-black-reflect",
-      "sku": "tenis-tes-her-whita-41",
+      "sku": "tenis-tes-nin-white-41",
       "name": "Tênis Tesla Nine Black Reflect",
       "brand": "Tesla",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 359.9,
-      "priceRaw": "R$359,90",
+      "price": 399.9,
+      "priceRaw": "R$399,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -56097,11 +55982,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Hertz White Art por R$359,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Nine All White por R$399,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/591-tesla-1_1600x1600fill_ffffff-98c71083925f849b6717537146471448-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/001-tesla_1600x1600fill_ffffff-2b51e533ea38c6c5b017749781688843-480-0.webp",
           "alt": "Tênis Tesla Nine Black Reflect",
           "position": 1
         },
@@ -56152,13 +56037,13 @@
     },
     {
       "id": "tenis-tesla-vedanta-black-white-10cvt",
-      "sku": "tenis-tes-nin-white-41",
+      "sku": "tenis-tes-coi-silva-40",
       "name": "Tênis Tesla Vedanta Black White",
       "brand": "Tesla",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 399.9,
-      "priceRaw": "R$399,90",
+      "price": 349.9,
+      "priceRaw": "R$349,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -56175,11 +56060,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Nine All White por R$399,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Coil Bruno Silva por R$349,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/001-tesla_1600x1600fill_ffffff-2b51e533ea38c6c5b017749781688843-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/imagem-do-whatsapp-de-2025-07-02-as-100647-388a27c0-1_1600x1600fill_ffffff-0be81e7abe08ca975617631496973104-480-0.webp",
           "alt": "Tênis Tesla Vedanta Black White",
           "position": 1
         },
@@ -56230,13 +56115,13 @@
     },
     {
       "id": "tenis-tesla-vedanta-grey-m3ioi",
-      "sku": "tenis-tes-her-whita-41",
+      "sku": "tenis-tes-coi-bruno-silva-40",
       "name": "Tênis Tesla Vedanta Grey",
       "brand": "Tesla",
       "category": "Acessórios",
       "department": "produtos",
-      "price": 359.9,
-      "priceRaw": "R$359,90",
+      "price": 399.9,
+      "priceRaw": "R$399,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -56253,11 +56138,11 @@
           "available": true
         }
       ],
-      "description": "Compre online Tênis Tesla Hertz White Art por R$359,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Tênis Tesla Coil Pro Black Reflect por R$399,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/591-tesla-1_1600x1600fill_ffffff-98c71083925f849b6717537146471448-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/dsc00790jpg_1600x1600fill_ffffff-1f38b9804c220db03617749785144512-480-0.webp",
           "alt": "Tênis Tesla Vedanta Grey",
           "position": 1
         },
@@ -57819,13 +57704,13 @@
     },
     {
       "id": "truck-intruder-trucks-pro-series-ii-129mm-polido-mid-vrno2",
-      "sku": "truck-lyons-pro-159silver",
+      "sku": "truck-pivot-133mm-poli-pre",
       "name": "Truck Intruder Trucks Pro Series II 129MM Polido Mid",
-      "brand": "Lyons skateboards",
+      "brand": "Pivot",
       "category": "Trucks",
       "department": "produtos",
-      "price": 259.9,
-      "priceRaw": "R$259,90",
+      "price": 219.9,
+      "priceRaw": "R$219,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -57836,21 +57721,15 @@
           "available": true
         },
         {
-          "id": "variation-0-159mm",
+          "id": "variation-0-133mm",
           "name": "variation[0]",
-          "value": "159MM",
+          "value": "133MM",
           "available": true
         },
         {
           "id": "variation-0-129mm",
           "name": "variation[0]",
           "value": "129mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149MM",
           "available": true
         },
         {
@@ -57866,29 +57745,17 @@
           "available": true
         },
         {
-          "id": "variation-0-azul",
+          "id": "variation-0-149mm",
           "name": "variation[0]",
-          "value": "Azul",
-          "available": true
-        },
-        {
-          "id": "variation-1-139mm",
-          "name": "variation[1]",
-          "value": "139MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-133mm",
-          "name": "variation[0]",
-          "value": "133MM",
+          "value": "149MM",
           "available": true
         }
       ],
-      "description": "Compre online Truck Lyons Pro 159mm Silver por R$259,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Pivot Standard Pro Importado 133mm por R$219,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/truck-lyons-skate-hollow-02870301f8516dcbb417797138868704-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0402-688480d4e4daa3459317568371975896-1024-1024-7bc8cbf3243bebb29917888911296718-480-0.webp",
           "alt": "Truck Intruder Trucks Pro Series II 129MM Polido Mid",
           "position": 1
         },
@@ -58743,13 +58610,13 @@
     },
     {
       "id": "truck-longboard-180mm-invertido-50-graus",
-      "sku": "truck-ven-v8-149MM",
+      "sku": "truck-lyons-139-baseazul",
       "name": "Truck Longboard 180mm Invertido 50 Graus",
-      "brand": "Venture Trucks",
+      "brand": "Lyons skateboards",
       "category": "Trucks",
       "department": "produtos",
-      "price": 599.9,
-      "priceRaw": "R$599,90",
+      "price": 149.9,
+      "priceRaw": "R$149,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -58757,6 +58624,30 @@
           "id": "variation-0-180mm",
           "name": "variation[0]",
           "value": "180MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-azul",
+          "name": "variation[0]",
+          "value": "Azul",
+          "available": true
+        },
+        {
+          "id": "variation-1-139mm",
+          "name": "variation[1]",
+          "value": "139MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-139mm",
+          "name": "variation[0]",
+          "value": "139MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-129mm",
+          "name": "variation[0]",
+          "value": "129mm",
           "available": true
         },
         {
@@ -58772,35 +58663,17 @@
           "available": true
         },
         {
-          "id": "variation-0-139mm",
-          "name": "variation[0]",
-          "value": "139MM",
-          "available": true
-        },
-        {
           "id": "variation-0-159mm",
           "name": "variation[0]",
           "value": "159MM",
           "available": true
-        },
-        {
-          "id": "variation-0-azul",
-          "name": "variation[0]",
-          "value": "Azul",
-          "available": true
-        },
-        {
-          "id": "variation-1-139mm",
-          "name": "variation[1]",
-          "value": "139MM",
-          "available": true
         }
       ],
-      "description": "Compre online Truck Venture V8 Polished 149MM por R$599,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Lyons Profissional 139mm Mid Hollow Azul por R$149,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/701b604847a56ae311c191d2a94df83a-c929b7bc76a4f3316217677136129579-1024-1024-0e2278abe250e0ecee17900804239889-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20260514_140359-2729dae25913c4b4e017787789557805-1024-1024-32ee00a30ca268eda417927593528192-480-0.webp",
           "alt": "Truck Longboard 180mm Invertido 50 Graus",
           "position": 1
         },
@@ -58944,13 +58817,13 @@
     },
     {
       "id": "truck-lyons-pro-139-preto",
-      "sku": "truck-florest-vermelh-149",
+      "sku": "truck-ess-149MM",
       "name": "Truck Lyons Pro 139 Preto",
-      "brand": "Florest Skateboard",
+      "brand": "Essência Trucks",
       "category": "Trucks",
       "department": "produtos",
-      "price": 159.9,
-      "priceRaw": "R$159,90",
+      "price": 249.9,
+      "priceRaw": "R$249,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -58963,19 +58836,25 @@
         {
           "id": "variation-0-149mm",
           "name": "variation[0]",
-          "value": "149MM",
+          "value": "149mm",
           "available": true
         },
         {
-          "id": "variation-0-azul",
+          "id": "variation-0-133mm",
           "name": "variation[0]",
-          "value": "Azul",
+          "value": "133MM",
           "available": true
         },
         {
-          "id": "variation-1-139mm",
-          "name": "variation[1]",
-          "value": "139MM",
+          "id": "variation-0-159mm",
+          "name": "variation[0]",
+          "value": "159MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-149mm",
+          "name": "variation[0]",
+          "value": "149MM",
           "available": true
         },
         {
@@ -58983,19 +58862,13 @@
           "name": "variation[0]",
           "value": "129mm",
           "available": true
-        },
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149mm",
-          "available": true
         }
       ],
-      "description": "Compre online Truck Florest Pro 149mm por R$159,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Essência Silver Hollow 149mm por R$249,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/gemini_generated_image_e2xl8he2xl8he2xl-63b81ced7879d8085117847287712312-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20250205_152526-c3dfb81e6001e7517117387799866432-1024-1024-903f441e5077a79a5817903383679715-480-0.webp",
           "alt": "Truck Lyons Pro 139 Preto",
           "position": 1
         },
@@ -59954,9 +59827,9 @@
     },
     {
       "id": "truck-lyons-139mm-mid-hollow-copia-welwg",
-      "sku": "truck-int-t-pol-139MM",
+      "sku": "truck-ess-149MM",
       "name": "Truck Lyons Profissional 139mm Mid Hollow Azul",
-      "brand": "Intruder Trucks",
+      "brand": "Essência Trucks",
       "category": "Trucks",
       "department": "produtos",
       "price": 249.9,
@@ -59977,15 +59850,15 @@
           "available": true
         },
         {
-          "id": "variation-0-139mm",
+          "id": "variation-0-149mm",
           "name": "variation[0]",
-          "value": "139MM",
+          "value": "149mm",
           "available": true
         },
         {
-          "id": "variation-0-159mm",
+          "id": "variation-0-139mm",
           "name": "variation[0]",
-          "value": "159MM",
+          "value": "139MM",
           "available": true
         },
         {
@@ -59995,29 +59868,23 @@
           "available": true
         },
         {
-          "id": "variation-0-133mm",
-          "name": "variation[0]",
-          "value": "133MM",
-          "available": true
-        },
-        {
           "id": "variation-0-129mm",
           "name": "variation[0]",
           "value": "129mm",
           "available": true
         },
         {
-          "id": "variation-0-149mm",
+          "id": "variation-0-159mm",
           "name": "variation[0]",
-          "value": "149mm",
+          "value": "159MM",
           "available": true
         }
       ],
-      "description": "Compre online Truck Intruder Trucks Pro Series II 139MM Polido Mid por R$249,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Essência Silver Hollow 149mm por R$249,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/36c424408c-ae423b0353ed33f01f17829100219915-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20250205_152526-c3dfb81e6001e7517117387799866432-1024-1024-903f441e5077a79a5817903383679715-480-0.webp",
           "alt": "Truck Lyons Profissional 139mm Mid Hollow Azul",
           "position": 1
         },
@@ -60166,13 +60033,13 @@
     },
     {
       "id": "truck-lyons-139mm-mid-hollow-prata-14x5j",
-      "sku": "truck-lyons-139-baseazul",
+      "sku": "truck-int-t-pol-139MM",
       "name": "Truck Lyons Profissional 139mm Mid Hollow Prata",
-      "brand": "Lyons skateboards",
+      "brand": "Intruder Trucks",
       "category": "Trucks",
       "department": "produtos",
-      "price": 149.9,
-      "priceRaw": "R$149,90",
+      "price": 249.9,
+      "priceRaw": "R$249,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -60189,21 +60056,9 @@
           "available": true
         },
         {
-          "id": "variation-0-azul",
+          "id": "variation-0-139mm",
           "name": "variation[0]",
-          "value": "Azul",
-          "available": true
-        },
-        {
-          "id": "variation-0-133mm",
-          "name": "variation[0]",
-          "value": "133MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149MM",
+          "value": "139MM",
           "available": true
         },
         {
@@ -60213,23 +60068,29 @@
           "available": true
         },
         {
+          "id": "variation-0-149mm",
+          "name": "variation[0]",
+          "value": "149MM",
+          "available": true
+        },
+        {
           "id": "variation-0-159mm",
           "name": "variation[0]",
           "value": "159MM",
           "available": true
         },
         {
-          "id": "variation-0-139mm",
+          "id": "variation-0-133mm",
           "name": "variation[0]",
-          "value": "139MM",
+          "value": "133MM",
           "available": true
         }
       ],
-      "description": "Compre online Truck Lyons Profissional 139mm Mid Hollow Azul por R$149,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Intruder Trucks Pro Series II 139MM Polido Mid por R$249,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20260514_140359-2729dae25913c4b4e017787789557805-1024-1024-32ee00a30ca268eda417927593528192-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/36c424408c-ae423b0353ed33f01f17829100219915-480-0.webp",
           "alt": "Truck Lyons Profissional 139mm Mid Hollow Prata",
           "position": 1
         },
@@ -61440,13 +61301,13 @@
     },
     {
       "id": "truck-thunder-polish",
-      "sku": "truck-ess-149MM",
+      "sku": "truck-pivot-133mm-poli-pre",
       "name": "Truck Thunder Polish",
-      "brand": "Essência Trucks",
+      "brand": "Pivot",
       "category": "Trucks",
       "department": "produtos",
-      "price": 249.9,
-      "priceRaw": "R$249,90",
+      "price": 219.9,
+      "priceRaw": "R$219,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -61463,9 +61324,27 @@
           "available": true
         },
         {
+          "id": "variation-0-133mm",
+          "name": "variation[0]",
+          "value": "133MM",
+          "available": true
+        },
+        {
           "id": "variation-0-149mm",
           "name": "variation[0]",
           "value": "149mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-azul",
+          "name": "variation[0]",
+          "value": "Azul",
+          "available": true
+        },
+        {
+          "id": "variation-1-139mm",
+          "name": "variation[1]",
+          "value": "139MM",
           "available": true
         },
         {
@@ -61473,19 +61352,13 @@
           "name": "variation[0]",
           "value": "129mm",
           "available": true
-        },
-        {
-          "id": "variation-0-159mm",
-          "name": "variation[0]",
-          "value": "159MM",
-          "available": true
         }
       ],
-      "description": "Compre online Truck Essência Silver Hollow 149mm por R$249,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Pivot Standard Pro Importado 133mm por R$219,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20250205_152526-c3dfb81e6001e7517117387799866432-1024-1024-903f441e5077a79a5817903383679715-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0402-688480d4e4daa3459317568371975896-1024-1024-7bc8cbf3243bebb29917888911296718-480-0.webp",
           "alt": "Truck Thunder Polish",
           "position": 1
         },
@@ -61723,13 +61596,13 @@
     },
     {
       "id": "truck-venture-v8-duplex-144mm-1vi52",
-      "sku": "truck-lyon-verde-139mm",
+      "sku": "truck-lyons-pro-159silver",
       "name": "Truck Venture Duplex 144MM",
       "brand": "Lyons skateboards",
       "category": "Trucks",
       "department": "produtos",
-      "price": 229.9,
-      "priceRaw": "R$229,90",
+      "price": 259.9,
+      "priceRaw": "R$259,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -61740,9 +61613,9 @@
           "available": true
         },
         {
-          "id": "variation-0-139mm",
+          "id": "variation-0-159mm",
           "name": "variation[0]",
-          "value": "139MM",
+          "value": "159MM",
           "available": true
         },
         {
@@ -61764,9 +61637,9 @@
           "available": true
         },
         {
-          "id": "variation-0-129mm",
+          "id": "variation-0-139mm",
           "name": "variation[0]",
-          "value": "129mm",
+          "value": "139MM",
           "available": true
         },
         {
@@ -61776,17 +61649,17 @@
           "available": true
         },
         {
-          "id": "variation-0-149mm",
+          "id": "variation-0-129mm",
           "name": "variation[0]",
-          "value": "149MM",
+          "value": "129mm",
           "available": true
         }
       ],
-      "description": "Compre online Truck Lyons Pro 139 Verde por R$229,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Lyons Pro 159mm Silver por R$259,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20260624_185128-f1217c434dca8e15f317824307065625-1024-1024-7a55894078696b727e17846648443969-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/truck-lyons-skate-hollow-02870301f8516dcbb417797138868704-480-0.webp",
           "alt": "Truck Venture Duplex 144MM",
           "position": 1
         },
@@ -62007,13 +61880,13 @@
     },
     {
       "id": "truck-venture-v8-polished-147mm-d9j8r",
-      "sku": "truck-lyon-verde-139mm",
+      "sku": "truck-lyons-pro-159silver",
       "name": "Truck Venture V8 Polished 144MM",
       "brand": "Lyons skateboards",
       "category": "Trucks",
       "department": "produtos",
-      "price": 229.9,
-      "priceRaw": "R$229,90",
+      "price": 259.9,
+      "priceRaw": "R$259,90",
       "discountPercent": 0,
       "discountPercentRaw": "0% OFF",
       "variants": [
@@ -62024,81 +61897,9 @@
           "available": true
         },
         {
-          "id": "variation-0-139mm",
-          "name": "variation[0]",
-          "value": "139MM",
-          "available": true
-        },
-        {
           "id": "variation-0-159mm",
           "name": "variation[0]",
           "value": "159MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149mm",
-          "available": true
-        }
-      ],
-      "description": "Compre online Truck Lyons Pro 139 Verde por R$229,90. Faça seu pedido e pague-o online.",
-      "specifications": {},
-      "images": [
-        {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/photoroom_20260624_185128-f1217c434dca8e15f317824307065625-1024-1024-7a55894078696b727e17846648443969-480-0.webp",
-          "alt": "Truck Venture V8 Polished 144MM",
-          "position": 1
-        },
-        {
-          "src": "http://acdn-us.mitiendanube.com/stores/004/253/224/products/701b604847a56ae311c191d2a94df83a-c929b7bc76a4f3316217677136129579-1024-1024-d873a65c0f145aced717682431649584-640-0.webp",
-          "alt": "Truck Venture V8 Polished 144MM",
-          "position": 2
-        },
-        {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/701b604847a56ae311c191d2a94df83a-c929b7bc76a4f3316217677136129579-1024-1024-d873a65c0f145aced717682431649584-480-0.webp",
-          "alt": "Truck Venture V8 Polished 144MM",
-          "position": 3
-        }
-      ],
-      "available": true,
-      "sourceUrl": "https://www.ossoskateshop.com.br/produtos/truck-venture-v8-polished-147mm-d9j8r/",
-      "source": "Osso Skate Shop"
-    },
-    {
-      "id": "truck-venture-v8-polished-149mm-1h6p7",
-      "sku": "truck-pivot-133mm-poli-pre",
-      "name": "Truck Venture V8 Polished 149MM",
-      "brand": "Pivot",
-      "category": "Trucks",
-      "department": "produtos",
-      "price": 219.9,
-      "priceRaw": "R$219,90",
-      "discountPercent": 0,
-      "discountPercentRaw": "0% OFF",
-      "variants": [
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149mm",
-          "available": true
-        },
-        {
-          "id": "variation-0-133mm",
-          "name": "variation[0]",
-          "value": "133MM",
-          "available": true
-        },
-        {
-          "id": "variation-0-149mm",
-          "name": "variation[0]",
-          "value": "149MM",
           "available": true
         },
         {
@@ -62120,17 +61921,107 @@
           "available": true
         },
         {
+          "id": "variation-0-149mm",
+          "name": "variation[0]",
+          "value": "149MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-149mm",
+          "name": "variation[0]",
+          "value": "149mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-129mm",
+          "name": "variation[0]",
+          "value": "129mm",
+          "available": true
+        }
+      ],
+      "description": "Compre online Truck Lyons Pro 159mm Silver por R$259,90. Faça seu pedido e pague-o online.",
+      "specifications": {},
+      "images": [
+        {
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/truck-lyons-skate-hollow-02870301f8516dcbb417797138868704-480-0.webp",
+          "alt": "Truck Venture V8 Polished 144MM",
+          "position": 1
+        },
+        {
+          "src": "http://acdn-us.mitiendanube.com/stores/004/253/224/products/701b604847a56ae311c191d2a94df83a-c929b7bc76a4f3316217677136129579-1024-1024-d873a65c0f145aced717682431649584-640-0.webp",
+          "alt": "Truck Venture V8 Polished 144MM",
+          "position": 2
+        },
+        {
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/701b604847a56ae311c191d2a94df83a-c929b7bc76a4f3316217677136129579-1024-1024-d873a65c0f145aced717682431649584-480-0.webp",
+          "alt": "Truck Venture V8 Polished 144MM",
+          "position": 3
+        }
+      ],
+      "available": true,
+      "sourceUrl": "https://www.ossoskateshop.com.br/produtos/truck-venture-v8-polished-147mm-d9j8r/",
+      "source": "Osso Skate Shop"
+    },
+    {
+      "id": "truck-venture-v8-polished-149mm-1h6p7",
+      "sku": "truck-ind-stage11-149mm",
+      "name": "Truck Venture V8 Polished 149MM",
+      "brand": "Independent Trucks",
+      "category": "Trucks",
+      "department": "produtos",
+      "price": 799.9,
+      "priceRaw": "R$799,90",
+      "discountPercent": 0,
+      "discountPercentRaw": "0% OFF",
+      "variants": [
+        {
+          "id": "variation-0-149mm",
+          "name": "variation[0]",
+          "value": "149mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-149mm",
+          "name": "variation[0]",
+          "value": "149MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-azul",
+          "name": "variation[0]",
+          "value": "Azul",
+          "available": true
+        },
+        {
+          "id": "variation-1-139mm",
+          "name": "variation[1]",
+          "value": "139MM",
+          "available": true
+        },
+        {
+          "id": "variation-0-129mm",
+          "name": "variation[0]",
+          "value": "129mm",
+          "available": true
+        },
+        {
+          "id": "variation-0-139mm",
+          "name": "variation[0]",
+          "value": "139MM",
+          "available": true
+        },
+        {
           "id": "variation-0-159mm",
           "name": "variation[0]",
           "value": "159MM",
           "available": true
         }
       ],
-      "description": "Compre online Truck Pivot Standard Pro Importado 133mm por R$219,90. Faça seu pedido e pague-o online.",
+      "description": "Compre online Truck Independent Stage XI Polished Standard 149mm por R$799,90. Faça seu pedido e pague-o online.",
       "specifications": {},
       "images": [
         {
-          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/img_0402-688480d4e4daa3459317568371975896-1024-1024-7bc8cbf3243bebb29917888911296718-480-0.webp",
+          "src": "https://acdn-us.mitiendanube.com/stores/004/253/224/products/truck-independent-stage-11-std-139mm-fb9298e47a71c5623c17846563190968-480-0.webp",
           "alt": "Truck Venture V8 Polished 149MM",
           "position": 1
         },
