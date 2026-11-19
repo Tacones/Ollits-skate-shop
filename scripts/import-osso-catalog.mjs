@@ -58,7 +58,7 @@ function productJsonLd(records, pageName, pageUrl) {
 
 function extractProductLinks(html) {
   const links = new Set();
-  for (const match of html.matchAll(/href=["']([^"']*\/produtos\/[^"'#?]+)["']/gi)) {
+  for (const match of html.matchAll(/href=["']([^"']*\/produtos?\/[^"'#?]+)["']/gi)) {
     const url = absoluteUrl(match[1]);
     if (url) links.add(url);
   }
@@ -214,10 +214,8 @@ async function crawlListing(path) {
     const url = page === 1 ? `${BASE_URL}${path}` : `${BASE_URL}${path}${path.includes('?') ? '&' : '?'}page=${page}`;
     const html = await fetchHtml(url);
     if (page === 1) {
-      const productSnippets = [...html.matchAll(/.{0,100}produtos.{0,160}/gi)].slice(0, 5).map((match) => match[0].replace(/\s+/g, ' '));
-      const productIndex = html.toLowerCase().indexOf('roda voltage');
       const hrefSamples = [...html.matchAll(/href\s*=\s*["']([^"']+)["']/gi)].map((match) => match[1]).filter((href) => /osso|produt|skate|\.com\.br/i.test(href)).slice(0, 35);
-      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; title=' + (html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] || 'no title'));
+      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; title=' + (html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] || 'no title') + '; hrefs=' + JSON.stringify(hrefSamples));
     }
     const pageLinks = extractProductLinks(html);
     pageLinks.forEach((link) => links.add(link));
