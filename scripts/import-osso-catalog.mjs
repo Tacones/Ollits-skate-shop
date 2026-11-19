@@ -123,9 +123,9 @@ function extractVisiblePricePair(html, currentPrice) {
     }
   }
   const original = struckPrices.find((value) => value > (currentPrice ?? 0));
-  const currentRaw = currentPrice === undefined ? undefined : \`R$\${currentPrice.toFixed(2).replace('.', ',')}\`;
+  const currentRaw = currentPrice === undefined ? undefined : 'R$' + currentPrice.toFixed(2).replace('.', ',');
   return {
-    priceRaw: original === undefined ? currentRaw : \`R$\${original.toFixed(2).replace('.', ',')}\`,
+    priceRaw: original === undefined ? currentRaw : 'R$' + original.toFixed(2).replace('.', ','),
     promotionalPriceRaw: original === undefined ? undefined : currentRaw,
   };
 }
