@@ -43,7 +43,7 @@ export function CatalogBrowser() {
         <label className="sr-only" htmlFor="catalog-brand">Filtrar por marca</label>
         <select id="catalog-brand" value={brand} onChange={(event) => setBrand(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[#d71920]">{brands.map((item) => <option key={item} value={item}>{item}</option>)}</select>
         <label className="sr-only" htmlFor="catalog-sort">Ordenar produtos</label>
-        <select id="catalog-sort" value={sort} onChange={(event) => setSort(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[#d71920]}">
+        <select id="catalog-sort" value={sort} onChange={(event) => setSort(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[#d71920]">
           <option value="relevance">Relevância</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="name">Nome A–Z</option>
         </select>
       </div>
