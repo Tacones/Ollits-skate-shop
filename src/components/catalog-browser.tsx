@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ProductCard } from '@/components/product-card';
 import { categories, products } from '@/data/products';
 
@@ -12,6 +12,13 @@ export function CatalogBrowser() {
   const [brand, setBrand] = useState('Todas as marcas');
   const [availability, setAvailability] = useState(false);
   const [sort, setSort] = useState('relevance');
+
+  useEffect(() => {
+    const requestedCategory = new URLSearchParams(window.location.search).get('categoria');
+    if (requestedCategory && categoryLabels.includes(requestedCategory as (typeof categoryLabels)[number])) {
+      setCategory(requestedCategory as (typeof categoryLabels)[number]);
+    }
+  }, []);
 
   const brands = useMemo(() => ['Todas as marcas', ...Array.from(new Set(products.map((p) => p.brand).filter((value): value is string => Boolean(value))).values()).sort((a, b) => a.localeCompare(b, 'pt-BR'))], []);
 
