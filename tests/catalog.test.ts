@@ -28,7 +28,7 @@ test('effective product price prefers a promotional price and falls back to regu
     specifications: {},
     images: [],
     available: true,
-    source: 'Osso Skate Shop',
+    source: 'Osso Skate Shop' as const,
   };
   assert.equal(getProductPrice(productWithPromo), 80);
 
