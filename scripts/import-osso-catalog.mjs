@@ -191,7 +191,8 @@ async function crawlListing(path) {
     const html = await fetchHtml(url);
     if (page === 1) {
       const productSnippets = [...html.matchAll(/.{0,100}produtos.{0,160}/gi)].slice(0, 5).map((match) => match[0].replace(/\s+/g, ' '));
-      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; hrefs=' + [...html.matchAll(/href\s*=/gi)].length + '; product snippets=' + JSON.stringify(productSnippets));
+      const productIndex = html.toLowerCase().indexOf('roda voltage');
+      console.log('Listing diagnostic ' + path + ': ' + html.length + ' chars; card sample=' + (productIndex >= 0 ? html.slice(Math.max(0, productIndex - 1400), productIndex + 500).replace(/\s+/g, ' ') : 'product name not found'));
     }
     const pageLinks = extractProductLinks(html);
     pageLinks.forEach((link) => links.add(link));
