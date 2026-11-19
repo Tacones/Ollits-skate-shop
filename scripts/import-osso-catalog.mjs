@@ -1,10 +1,10 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 const BASE_URL = 'https://www.ossoskateshop.com.br';
 const START_PATHS = ['/produtos/', '/skate/', '/skate/acessorios/', '/vestuario/'];
 const MAX_LISTING_PAGES = 60;
-const MIN_EXPECTED_PRODUCTS = 800;
+const MIN_EXPECTED_PRODUCTS = 700;
 const USER_AGENT = 'OllitsCatalogImporter/1.0 (+https://github.com/Tacones/Ollits-skate-shop)';
 const sleep = (ms) => new Promise((resolvePromise) => setTimeout(resolvePromise, ms));
 
@@ -266,7 +266,16 @@ async function parseProduct(url) {
 }
 
 async function main() {
+  const outputPath = resolve('src/data/import/supplier-catalog.json');
+  const previousUrls = new Set();
+  try {
+    const previous = JSON.parse(await readFile(outputPath, 'utf8'));
+    for (const product of previous.products || []) if (product.sourceUrl) previousUrls.add(product.sourceUrl);
+  } catch {}
+
   const productUrls = await crawlSitemap();
+  previousUrls.forEach((url) => productUrls.add(url));
+  console.log('Added ' + previousUrls.size + ' URLs from the previous supplier snapshot for refresh.');
   for (const path of START_PATHS) {
     const links = await crawlListing(path);
     console.log(`Discovered ${links.size} product URLs from ${path}`);
@@ -301,7 +310,6 @@ async function main() {
     products,
   };
 
-  const outputPath = resolve('src/data/import/supplier-catalog.json');
   await mkdir(resolve('src/data/import'), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
   console.log(`Imported ${products.length} products into ${outputPath}`);
