@@ -189,6 +189,7 @@ async function crawlListing(path) {
   for (let page = 1; page <= MAX_LISTING_PAGES; page += 1) {
     const url = page === 1 ? `${BASE_URL}${path}` : `${BASE_URL}${path}${path.includes('?') ? '&' : '?'}page=${page}`;
     const html = await fetchHtml(url);
+    if (page === 1) console.log(`Listing diagnostic ${path}: ${html.length} chars; title=${html.match(/<title[^>]*>([\\s\\S]*?)<\\/title>/i)?.[1]?.slice(0, 120) || 'no title'}; sample=${html.slice(0, 180).replace(/\\s+/g, ' ')}`);
     const pageLinks = extractProductLinks(html);
     pageLinks.forEach((link) => links.add(link));
     if (!pageLinks.length || pageLinks.length < 5) break;
