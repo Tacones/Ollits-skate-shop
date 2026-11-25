@@ -46,22 +46,22 @@ export function CatalogBrowser() {
     <section id="catalogo" aria-label="Catálogo de produtos">
       <div className="mb-5 grid gap-3 md:grid-cols-[1fr_220px_190px]">
         <label className="sr-only" htmlFor="catalog-search">Buscar produtos</label>
-        <input id="catalog-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscar produto, marca ou SKU" className="min-w-0 border border-black bg-white px-4 py-3 text-sm outline-none placeholder:text-black/40 focus:ring-2 focus:ring-[#d71920]" />
+        <input id="catalog-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscar produto, marca ou SKU" className="min-w-0 border border-black bg-white px-4 py-3 text-sm outline-none placeholder:text-black/40 focus:ring-2 focus:ring-[var(--accent)]" />
         <label className="sr-only" htmlFor="catalog-brand">Filtrar por marca</label>
-        <select id="catalog-brand" value={brand} onChange={(event) => setBrand(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[#d71920]">{brands.map((item) => <option key={item} value={item}>{item}</option>)}</select>
+        <select id="catalog-brand" value={brand} onChange={(event) => setBrand(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[var(--accent)]">{brands.map((item) => <option key={item} value={item}>{item}</option>)}</select>
         <label className="sr-only" htmlFor="catalog-sort">Ordenar produtos</label>
-        <select id="catalog-sort" value={sort} onChange={(event) => setSort(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[#d71920]">
+        <select id="catalog-sort" value={sort} onChange={(event) => setSort(event.target.value)} className="border border-black bg-white px-3 py-3 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-[var(--accent)]">
           <option value="relevance">Relevância</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="name">Nome A–Z</option>
         </select>
       </div>
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap gap-2" aria-label="Filtrar por categoria">
-          {categoryLabels.map((item) => <button key={item} type="button" onClick={() => setCategory(item)} className={`border border-black px-3 py-2 text-[10px] font-black uppercase transition ${category === item ? 'bg-[#d71920] text-white' : 'bg-white text-black hover:bg-black hover:text-white'}`} aria-pressed={category === item}>{item}</button>)}
+          {categoryLabels.map((item) => <button key={item} type="button" onClick={() => setCategory(item)} className={`border border-black px-3 py-2 text-[10px] font-black uppercase transition ${category === item ? 'bg-[var(--accent)] text-white' : 'bg-white text-black hover:bg-black hover:text-white'}`} aria-pressed={category === item}>{item}</button>)}
         </div>
-        <label className="flex items-center gap-2 text-[10px] font-bold uppercase"><input type="checkbox" checked={availability} onChange={(event) => setAvailability(event.target.checked)} className="accent-[#d71920]" /> Apenas disponíveis</label>
+        <label className="flex items-center gap-2 text-[10px] font-bold uppercase"><input type="checkbox" checked={availability} onChange={(event) => setAvailability(event.target.checked)} className="accent-[var(--accent)]" /> Apenas disponíveis</label>
       </div>
       <div className="mb-4 flex items-center justify-between border-b border-black pb-3"><p className="text-[10px] font-black uppercase tracking-widest">{filteredProducts.length} {filteredProducts.length === 1 ? 'produto encontrado' : 'produtos encontrados'}</p><button onClick={() => { setQuery(''); setCategory('Todos'); setBrand('Todas as marcas'); setAvailability(false); setSort('relevance'); }} className="text-[10px] font-bold uppercase underline">Limpar filtros</button></div>
-      {filteredProducts.length === 0 ? <div className="border border-black bg-white p-8"><p className="text-xs font-black uppercase tracking-widest">Nenhum resultado</p><p className="mt-3 text-sm text-black/65">Tente outro termo ou remova algum filtro.</p></div> : <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{filteredProducts.map((product) => <ProductCard key={product.id} product={product} />)}</div>}
+      {filteredProducts.length === 0 ? <div className="border border-black bg-white p-8"><p className="text-xs font-black uppercase tracking-widest">Nenhum resultado</p><p className="mt-3 text-sm text-black/65">Tente outro termo ou remova algum filtro.</p></div> : <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{filteredProducts.map((product) => <ProductCard key={product.id} product={product} />)}</div>}
     </section>
   );
 }
