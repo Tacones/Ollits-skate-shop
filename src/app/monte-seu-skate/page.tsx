@@ -1,26 +1,5 @@
 'use client';
-
-import { useMemo, useState } from 'react';
-import { getProductPrice, products } from '@/data/catalog';
-
-const groups = [
-  { label: 'Shape', category: 'Shapes' as const },
-  { label: 'Trucks', category: 'Trucks' as const },
-  { label: 'Rodas', category: 'Rodas' as const },
-  { label: 'Rolamentos', category: 'Rolamentos' as const },
-];
-
-function matchesBuilderCategory(category: (typeof groups)[number]['category'], productCategory: string) {
-  if (category === 'Shapes') return productCategory.startsWith('Shape ');
-  return productCategory === category;
-}
-
-export default function MonteSeuSkatePage() {
-  const [selected, setSelected] = useState<Record<string, string>>({});
-  const total = useMemo(() => groups.reduce((sum, group) => {
-    const product = products.find((p) => p.id === selected[group.category]);
-    return sum + (product ? getProductPrice(product) : 0);
-  }, 0), [selected]);
-
-  return <div className="container-ollits py-16"><p className="text-xs font-bold uppercase tracking-widest text-black/45">Builder</p><h1 className="display mt-2 text-7xl uppercase leading-[.8]">Monte seu<br />Skate.</h1><p className="mt-6 max-w-xl text-lg text-black/65">Escolha cada componente. O total é atualizado na hora.</p><div className="mt-12 grid gap-5 md:grid-cols-2">{groups.map((group, index) => <section key={group.category} className="border border-black bg-white p-6"><div className="flex items-center justify-between"><h2 className="font-black uppercase">0{index + 1} / {group.label}</h2><span className="text-xs text-black/45">{group.category}</span></div><select value={selected[group.category] ?? ''} onChange={(e) => setSelected({ ...selected, [group.category]: e.target.value })} className="mt-6 w-full border border-black bg-[#f5f4ef] p-4 text-sm font-semibold"><option value="">Selecionar componente</option>{products.filter((p) => matchesBuilderCategory(group.category, p.category)).map((p) => <option key={p.id} value={p.id}>{p.name} — R$ {getProductPrice(p).toFixed(2).replace('.', ',')}</option>)}</select></section>)}</div><div className="mt-8 flex flex-col justify-between gap-5 border border-black bg-[#d8ff35] p-6 sm:flex-row sm:items-center"><div><p className="text-xs font-bold uppercase">Total estimado</p><p className="display mt-1 text-4xl">R$ {total.toFixed(2).replace('.', ',')}</p></div><button className="bg-black px-7 py-4 text-sm font-black uppercase text-white">Adicionar setup ao carrinho</button></div></div>;
-}
+import { useMemo, useState } from 'react'; import { getProductPrice, products } from '@/data/catalog'; import { useCart } from '@/components/cart-provider';
+const groups=[{label:'Shape',category:'Shapes' as const},{label:'Trucks',category:'Trucks' as const},{label:'Rodas',category:'Rodas' as const},{label:'Rolamentos',category:'Rolamentos' as const}];
+function matches(c:(typeof groups)[number]['category'],p:string){return c==='Shapes'?p.startsWith('Shape '):p===c;}
+export default function MonteSeuSkatePage(){const [selected,setSelected]=useState<Record<string,string>>({}); const {add}=useCart(); const chosen=groups.map(g=>products.find(p=>p.id===selected[g.category])).filter(Boolean); const total=useMemo(()=>chosen.reduce((s,p)=>s+getProductPrice(p!),0),[chosen]); const ready=chosen.length===groups.length; return <div className="container-ollits py-14 md:py-24"><div className="grid gap-10 md:grid-cols-[.8fr_1.2fr] md:items-end"><div><p className="eyebrow text-[var(--accent)]">Ollits builder / 001</p><h1 className="display mt-4 text-7xl uppercase leading-[.72] md:text-9xl">Build<br/>your<br/><span className="text-[var(--accent)]">ride.</span></h1></div><p className="max-w-md text-lg leading-relaxed text-black/60">Monte seu skate peça por peça. Escolha os componentes e acompanhe o total em tempo real.</p></div><div className="mt-14 grid gap-5 md:grid-cols-2">{groups.map((group,index)=><section key={group.category} className="border border-black bg-white p-6"><div className="flex items-center justify-between"><h2 className="font-black uppercase">0{index+1} / {group.label}</h2><span className="text-[10px] font-bold uppercase text-black/40">{selected[group.category]?'Selecionado':'Pendente'}</span></div><select aria-label={`Escolher ${group.label}`} value={selected[group.category]??''} onChange={e=>setSelected({...selected,[group.category]:e.target.value})} className="mt-6 w-full border border-black bg-[#f5f3ed] p-4 text-sm font-semibold"><option value="">Selecionar componente</option>{products.filter(p=>matches(group.category,p.category)).slice(0,80).map(p=><option key={p.id} value={p.id}>{p.name} — R$ {getProductPrice(p).toFixed(2).replace('.',',')}</option>)}</select></section>)}</div><div className="mt-7 flex flex-col justify-between gap-6 border border-black bg-[var(--acid)] p-6 md:flex-row md:items-center md:p-8"><div><p className="eyebrow">Total estimado</p><p className="display mt-2 text-5xl">R$ {total.toFixed(2).replace('.',',')}</p><p className="mt-2 text-xs font-bold text-black/60">{chosen.length} de {groups.length} componentes escolhidos</p></div><button disabled={!ready} onClick={()=>chosen.forEach(p=>add(p!))} className="bg-black px-7 py-4 text-[10px] font-black uppercase tracking-widest text-white disabled:cursor-not-allowed disabled:opacity-35">{ready?'Adicionar setup à sacola ↗':'Complete seu setup'}</button></div></div>}

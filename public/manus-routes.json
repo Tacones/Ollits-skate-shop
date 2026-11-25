@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"Ollits Skate Shop"},{"path":"/loja","title":"Loja"},{"path":"/produto/:id","title":"Produto"},{"path":"/carrinho","title":"Sacola"},{"path":"/monte-seu-skate","title":"Monte seu skate"},{"path":"/culture","title":"Culture"},{"path":"/pedido/sucesso","title":"Pedido confirmado"}]}

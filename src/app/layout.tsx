@@ -1,18 +1,3 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
-import { CartProvider } from '@/components/cart-provider';
-
-export const metadata: Metadata = {
-  title: 'Ollits Skate Shop | Skate, Street & Culture',
-  description: 'Ollits Skate Shop — peças, shapes, trucks, rodas e cultura skate.',
-};
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="pt-BR">
-      <body><CartProvider><Header /><main>{children}</main><Footer /></CartProvider></body>
-    </html>
-  );
-}
+import type { Metadata } from 'next'; import './globals.css'; import { Header } from '@/components/header'; import { Footer } from '@/components/footer'; import { CartProvider } from '@/components/cart-provider';
+export const metadata: Metadata={title:'Ollits Skate Shop — seu próximo rolê começa aqui',description:'Shapes, trucks, rodas, rolamentos e cultura de rua. Monte seu setup na Ollits Skate Shop.',openGraph:{title:'Ollits Skate Shop',description:'Equipamento e cultura para a próxima sessão.'}};
+export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){return <html lang="pt-BR"><body><CartProvider><Header/><main>{children}</main><Footer/></CartProvider></body></html>;}
