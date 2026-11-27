@@ -49,3 +49,11 @@ test('variants and images follow the scalable catalog contract', () => {
 test('supplier image URLs are absolute when present', () => {
   assert.ok(products.every((product) => product.images.every((image) => /^https?:\/\//.test(image.src))));
 });
+
+test('catalog images are normalized for storefront rendering', () => {
+  const imageUrls = products.flatMap((product) => product.images.map((image) => image.src));
+  assert.ok(imageUrls.length > 0);
+  assert.ok(imageUrls.every((url) => !url.includes('-50-0.webp')));
+  assert.ok(imageUrls.every((url) => !url.includes('empty-placeholder')));
+  assert.ok(products.every((product) => !product.brand || (!product.brand.includes('s/>') && !product.brand.includes('"'))));
+});
