@@ -53,6 +53,7 @@ test('supplier image URLs are absolute when present', () => {
 test('catalog images are normalized for storefront rendering', () => {
   const imageUrls = products.flatMap((product) => product.images.map((image) => image.src));
   assert.ok(imageUrls.length > 0);
+  assert.ok(imageUrls.every((url) => url.startsWith('https://')));
   assert.ok(imageUrls.every((url) => !url.includes('-50-0.webp')));
   assert.ok(imageUrls.every((url) => !url.includes('empty-placeholder')));
   assert.ok(products.every((product) => !product.brand || (!product.brand.includes('s/>') && !product.brand.includes('"'))));

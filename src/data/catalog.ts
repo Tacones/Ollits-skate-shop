@@ -9,7 +9,7 @@ const invalidImageUrls = new Set([
 function normalizeImage(image: ProductImage): ProductImage | null {
   if (!image.src || invalidImageUrls.has(image.src)) return null;
 
-  const src = image.src.replace(/-50-0\.webp$/, '-480-0.webp');
+  const src = image.src.replace(/^http:\/\//, 'https://').replace(/-50-0\.webp$/, '-480-0.webp');
   return { ...image, src };
 }
 
